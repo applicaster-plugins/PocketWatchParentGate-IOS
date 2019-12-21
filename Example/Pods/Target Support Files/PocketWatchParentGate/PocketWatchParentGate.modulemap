@@ -1,0 +1,6 @@
+framework module PocketWatchParentGate {
+  umbrella header "PocketWatchParentGate-umbrella.h"
+
+  export *
+  module * { export * }
+}

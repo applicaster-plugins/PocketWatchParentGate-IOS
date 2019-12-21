@@ -1,0 +1,28 @@
+PODS:
+  - PocketWatchParentGate (0.1.0):
+    - ZappPlugins
+  - ZappCore (0.1.5)
+  - ZappPlugins (11.1.8):
+    - ZappCore
+
+DEPENDENCIES:
+  - PocketWatchParentGate (from `../`)
+  - ZappPlugins
+
+SPEC REPOS:
+  "git@github.com:applicaster/CocoaPods.git":
+    - ZappCore
+    - ZappPlugins
+
+EXTERNAL SOURCES:
+  PocketWatchParentGate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PocketWatchParentGate: 123da1ad5179c13c403df1bfcf80a822fbcd3cca
+  ZappCore: 25908b99a27d3daace5d5b134ff1f911c4ed1782
+  ZappPlugins: 20bdc1011c0da748aa9c00e33f7f13bc8a36990a
+
+PODFILE CHECKSUM: db9c9c7c446c506eea9f06f48581169f64847895
+
+COCOAPODS: 1.8.4
