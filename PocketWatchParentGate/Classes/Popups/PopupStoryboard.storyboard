@@ -319,5 +319,86 @@ about new shows?</string>
             </objects>
             <point key="canvasLocation" x="1649" y="36"/>
         </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="PbA-RK-GpO">
+            <objects>
+                <viewController storyboardIdentifier="NotificationsPopup" id="Yei-KN-gBL" customClass="NotificationsViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hd-NM-nQK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-73-ieA">
+                                <rect key="frame" x="36.5" y="152.5" width="302" height="362"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-6K-FKD">
+                                        <rect key="frame" x="32" y="168" width="246" height="17"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="17"/>
+                                        <color key="textColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to turn off notifications?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-Av-8Zc">
+                                        <rect key="frame" x="32" y="203" width="238" height="30"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
+                                        <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vj-1u-2F0">
+                                        <rect key="frame" x="32" y="266" width="246" height="61"/>
+                                        <color key="backgroundColor" red="0.93725490196078431" green="1" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="10A-Wi-7DX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Y6v-3a-evW">
+                                        <rect key="frame" x="108.5" y="50" width="85" height="85"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="UvQ-rS-fUp"/>
+                                            <constraint firstAttribute="height" constant="85" id="rGd-7h-KH9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Y6v-3a-evW" firstAttribute="centerX" secondItem="ZhR-73-ieA" secondAttribute="centerX" id="1V7-6a-Zrd"/>
+                                    <constraint firstAttribute="bottom" secondItem="7vj-1u-2F0" secondAttribute="bottom" constant="35" id="1eS-J3-1FR"/>
+                                    <constraint firstItem="7vj-1u-2F0" firstAttribute="top" secondItem="FmC-Av-8Zc" secondAttribute="bottom" constant="33" id="D1o-q6-T6v"/>
+                                    <constraint firstItem="e4h-6K-FKD" firstAttribute="leading" secondItem="ZhR-73-ieA" secondAttribute="leading" constant="32" id="LmM-3s-BL0"/>
+                                    <constraint firstItem="FmC-Av-8Zc" firstAttribute="leading" secondItem="ZhR-73-ieA" secondAttribute="leading" constant="32" id="Mgm-Pt-0ls"/>
+                                    <constraint firstItem="7vj-1u-2F0" firstAttribute="leading" secondItem="ZhR-73-ieA" secondAttribute="leading" constant="32" id="aWt-xg-hIq"/>
+                                    <constraint firstAttribute="trailing" secondItem="e4h-6K-FKD" secondAttribute="trailing" constant="24" id="ino-97-JbA"/>
+                                    <constraint firstItem="FmC-Av-8Zc" firstAttribute="top" secondItem="e4h-6K-FKD" secondAttribute="bottom" constant="18" id="nLw-RV-g3j"/>
+                                    <constraint firstItem="e4h-6K-FKD" firstAttribute="top" secondItem="Y6v-3a-evW" secondAttribute="bottom" constant="33" id="og8-5Z-dGd"/>
+                                    <constraint firstAttribute="trailing" secondItem="7vj-1u-2F0" secondAttribute="trailing" constant="24" id="tA8-CQ-7Qp"/>
+                                    <constraint firstAttribute="trailing" secondItem="FmC-Av-8Zc" secondAttribute="trailing" constant="32" id="wJq-6Z-QCc"/>
+                                    <constraint firstItem="Y6v-3a-evW" firstAttribute="top" secondItem="ZhR-73-ieA" secondAttribute="top" constant="50" id="xkJ-ls-Yaq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZhR-73-ieA" firstAttribute="centerX" secondItem="9hd-NM-nQK" secondAttribute="centerX" id="8le-IR-JCi"/>
+                            <constraint firstItem="ZhR-73-ieA" firstAttribute="width" secondItem="9hd-NM-nQK" secondAttribute="width" multiplier="0.826087" constant="-7.7826086956521863" id="QqB-kr-snV"/>
+                            <constraint firstItem="ZhR-73-ieA" firstAttribute="centerY" secondItem="9hd-NM-nQK" secondAttribute="centerY" id="h1X-Dp-lpx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="INp-1t-0Yd"/>
+                    </view>
+                    <connections>
+                        <outlet property="bodyView" destination="ZhR-73-ieA" id="mb6-jQ-SFT"/>
+                        <outlet property="checkMarkImageView" destination="Y6v-3a-evW" id="SKu-TM-DiD"/>
+                        <outlet property="okButton" destination="7vj-1u-2F0" id="H4e-sy-qny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2I-2E-QA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2329" y="37"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="check_mark" width="36" height="31.5"/>
+    </resources>
 </document>

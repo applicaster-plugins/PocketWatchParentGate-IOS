@@ -66,6 +66,7 @@
 		BE09229523B4B5C300C5798C /* UICollor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229423B4B5C300C5798C /* UICollor.swift */; };
 		BE09229723B4C3B800C5798C /* GetNotifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */; };
 		BE09229923B4C96600C5798C /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229823B4C96600C5798C /* WarningViewController.swift */; };
+		BE09229B23B4CFFF00C5798C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229A23B4CFFF00C5798C /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,7 @@
 		BE09229423B4B5C300C5798C /* UICollor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollor.swift; sourceTree = "<group>"; };
 		BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetNotifiedViewController.swift; path = PocketWatchParentGate/Classes/Popups/GetNotifiedViewController.swift; sourceTree = "<group>"; };
 		BE09229823B4C96600C5798C /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
+		BE09229A23B4CFFF00C5798C /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -329,6 +331,7 @@
 				46EB2E00000150 /* QuestionPopupViewController.swift */,
 				BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */,
 				BE09229823B4C96600C5798C /* WarningViewController.swift */,
+				BE09229A23B4CFFF00C5798C /* NotificationsViewController.swift */,
 			);
 			name = Popups;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				46EB2E000004B0 /* FlexibleInsetsTextField.swift in Sources */,
 				46EB2E000004C0 /* ParentGateViewController.swift in Sources */,
 				46EB2E000005A0 /* PocketWatchParentGate-dummy.m in Sources */,
+				BE09229B23B4CFFF00C5798C /* NotificationsViewController.swift in Sources */,
 				46EB2E00000460 /* PocketWatchParentGate.swift in Sources */,
 				46EB2E000004E0 /* PopupStoryboard.storyboard in Sources */,
 				46EB2E000004D0 /* QuestionPopupViewController.swift in Sources */,
