@@ -9,89 +9,93 @@
 /* Begin PBXAggregateTarget section */
 		D6AC2725F1154DD3F9C17B6A1895ACAB /* ZappPlugins */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 46EB2E00000730 /* Build configuration list for PBXAggregateTarget "ZappPlugins" */;
+			buildConfigurationList = 46EB2E00000840 /* Build configuration list for PBXAggregateTarget "ZappPlugins" */;
 			buildPhases = (
 			);
 			dependencies = (
-				46EB2E000009C0 /* PBXTargetDependency */,
+				46EB2E00000AA0 /* PBXTargetDependency */,
 			);
 			name = ZappPlugins;
+			productName = ZappPlugins;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		46EB2E00000360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000350 /* Foundation.framework */; };
-		46EB2E00000410 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000000F0 /* ReplaceMe.swift */; };
-		46EB2E00000450 /* PocketWatchParentGate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000440 /* PocketWatchParentGate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00000490 /* PocketWatchParentGate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000480 /* PocketWatchParentGate-dummy.m */; };
-		46EB2E00000530 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000350 /* Foundation.framework */; };
-		46EB2E00000540 /* PipesDataModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000100 /* PipesDataModelHelper.swift */; };
-		46EB2E00000550 /* PipesDataModelHelperContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000110 /* PipesDataModelHelperContent.swift */; };
-		46EB2E00000560 /* PipesDataModelHelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000120 /* PipesDataModelHelperExtensions.swift */; };
-		46EB2E00000570 /* PipesDataModelHelperMediaGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000130 /* PipesDataModelHelperMediaGroups.swift */; };
-		46EB2E00000580 /* PipesDataModelHelperMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000140 /* PipesDataModelHelperMediaItem.swift */; };
-		46EB2E00000590 /* ZPAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000150 /* ZPAdapterProtocol.swift */; };
-		46EB2E000005A0 /* ZPPluginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000160 /* ZPPluginModel.swift */; };
-		46EB2E000005B0 /* AnalyticsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000170 /* AnalyticsProviderProtocol.swift */; };
-		46EB2E000005C0 /* PlayerObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000180 /* PlayerObserverProtocol.swift */; };
-		46EB2E000005D0 /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000190 /* PlayerProtocol.swift */; };
-		46EB2E000005E0 /* DependablePlayerAdDelegatePluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001A0 /* DependablePlayerAdDelegatePluginProtocol.swift */; };
-		46EB2E000005F0 /* DependablePlayerPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001B0 /* DependablePlayerPluginProtocol.swift */; };
-		46EB2E00000600 /* PlayerDependantPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001C0 /* PlayerDependantPluginProtocol.swift */; };
-		46EB2E00000610 /* FacadeConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001D0 /* FacadeConnector.swift */; };
-		46EB2E00000620 /* FacadeConnectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001E0 /* FacadeConnectorProtocol.swift */; };
-		46EB2E00000630 /* FacadeConnectorAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001F0 /* FacadeConnectorAnalyticsProtocol.swift */; };
-		46EB2E00000640 /* FacadeConnectorAppDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000200 /* FacadeConnectorAppDataProtocol.swift */; };
-		46EB2E00000650 /* FacadeConnectorPlayerDependantProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000210 /* FacadeConnectorPlayerDependantProtocol.swift */; };
-		46EB2E00000660 /* FacadeConnectorPluginManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000220 /* FacadeConnectorPluginManagerProtocol.swift */; };
-		46EB2E00000670 /* FacadeConnectorStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000230 /* FacadeConnectorStorageProtocol.swift */; };
-		46EB2E00000680 /* UserInterfaceLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000240 /* UserInterfaceLayerProtocol.swift */; };
-		46EB2E000006D0 /* ZappCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000006C0 /* ZappCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00000710 /* ZappCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000700 /* ZappCore-dummy.m */; };
-		46EB2E00000790 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000780 /* UIKit.framework */; };
-		46EB2E00000830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000350 /* Foundation.framework */; };
-		46EB2E000008A0 /* Pods-PocketWatchParentGateExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000890 /* Pods-PocketWatchParentGateExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E000008F0 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000008E0 /* Pods-PocketWatchParentGateExample-dummy.m */; };
-		46EB2E00000980 /* PocketWatchParentGate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5341B3A50D9226B639205BB9FFCF1EE2 /* PocketWatchParentGate.bundle */; };
+		46EB2E00000450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000440 /* Foundation.framework */; };
+		46EB2E00000460 /* PocketWatchParentGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000000F0 /* PocketWatchParentGate.swift */; };
+		46EB2E00000470 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000320 /* Metropolis-Bold.otf */; };
+		46EB2E00000480 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000330 /* Metropolis-Medium.otf */; };
+		46EB2E00000490 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000340 /* Metropolis-Regular.otf */; };
+		46EB2E000004A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000350 /* Assets.xcassets */; };
+		46EB2E000004B0 /* FlexibleInsetsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000110 /* FlexibleInsetsTextField.swift */; };
+		46EB2E000004C0 /* ParentGateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000120 /* ParentGateViewController.swift */; };
+		46EB2E000004D0 /* TextFieldPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000150 /* TextFieldPopupViewController.swift */; };
+		46EB2E000004E0 /* PopupStoryboard.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000140 /* PopupStoryboard.storyboard */; };
+		46EB2E000004F0 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000170 /* UIFont.swift */; };
+		46EB2E00000510 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000190 /* UIViewController.swift */; };
+		46EB2E00000560 /* PocketWatchParentGate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00000550 /* PocketWatchParentGate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E000005A0 /* PocketWatchParentGate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000590 /* PocketWatchParentGate-dummy.m */; };
+		46EB2E00000640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000440 /* Foundation.framework */; };
+		46EB2E00000650 /* PipesDataModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001A0 /* PipesDataModelHelper.swift */; };
+		46EB2E00000660 /* PipesDataModelHelperContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001B0 /* PipesDataModelHelperContent.swift */; };
+		46EB2E00000670 /* PipesDataModelHelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001C0 /* PipesDataModelHelperExtensions.swift */; };
+		46EB2E00000680 /* PipesDataModelHelperMediaGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001D0 /* PipesDataModelHelperMediaGroups.swift */; };
+		46EB2E00000690 /* PipesDataModelHelperMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001E0 /* PipesDataModelHelperMediaItem.swift */; };
+		46EB2E000006A0 /* ZPAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000001F0 /* ZPAdapterProtocol.swift */; };
+		46EB2E000006B0 /* ZPPluginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000200 /* ZPPluginModel.swift */; };
+		46EB2E000006C0 /* AnalyticsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000210 /* AnalyticsProviderProtocol.swift */; };
+		46EB2E000006D0 /* PlayerObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000220 /* PlayerObserverProtocol.swift */; };
+		46EB2E000006E0 /* PlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000230 /* PlayerProtocol.swift */; };
+		46EB2E000006F0 /* DependablePlayerAdDelegatePluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000240 /* DependablePlayerAdDelegatePluginProtocol.swift */; };
+		46EB2E00000700 /* DependablePlayerPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000250 /* DependablePlayerPluginProtocol.swift */; };
+		46EB2E00000710 /* PlayerDependantPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000260 /* PlayerDependantPluginProtocol.swift */; };
+		46EB2E00000720 /* FacadeConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000270 /* FacadeConnector.swift */; };
+		46EB2E00000730 /* FacadeConnectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000280 /* FacadeConnectorProtocol.swift */; };
+		46EB2E00000740 /* FacadeConnectorAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000290 /* FacadeConnectorAnalyticsProtocol.swift */; };
+		46EB2E00000750 /* FacadeConnectorAppDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000002A0 /* FacadeConnectorAppDataProtocol.swift */; };
+		46EB2E00000760 /* FacadeConnectorPlayerDependantProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000002B0 /* FacadeConnectorPlayerDependantProtocol.swift */; };
+		46EB2E00000770 /* FacadeConnectorPluginManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000002C0 /* FacadeConnectorPluginManagerProtocol.swift */; };
+		46EB2E00000780 /* FacadeConnectorStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000002D0 /* FacadeConnectorStorageProtocol.swift */; };
+		46EB2E00000790 /* UserInterfaceLayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000002E0 /* UserInterfaceLayerProtocol.swift */; };
+		46EB2E000007E0 /* ZappCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000007D0 /* ZappCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00000820 /* ZappCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000810 /* ZappCore-dummy.m */; };
+		46EB2E000008A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000890 /* UIKit.framework */; };
+		46EB2E00000940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000440 /* Foundation.framework */; };
+		46EB2E000009B0 /* Pods-PocketWatchParentGateExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000009A0 /* Pods-PocketWatchParentGateExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00000A00 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000009F0 /* Pods-PocketWatchParentGateExample-dummy.m */; };
+		BE09229523B4B5C300C5798C /* UICollor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229423B4B5C300C5798C /* UICollor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EB2E00000900 /* PBXContainerItemProxy */ = {
+		46EB2E00000A10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2F76CE1A0A0B317AE3FECC2B7ACFFE07;
 			remoteInfo = PocketWatchParentGate;
 		};
-		46EB2E00000920 /* PBXContainerItemProxy */ = {
+		46EB2E00000A30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AC86F9CD63A142C83EDE5E649431993D;
 			remoteInfo = ZappCore;
 		};
-		46EB2E00000940 /* PBXContainerItemProxy */ = {
+		46EB2E00000A50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6AC2725F1154DD3F9C17B6A1895ACAB;
 			remoteInfo = ZappPlugins;
 		};
-		46EB2E00000960 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84A20EEF714338CEECE91666A5500197;
-			remoteInfo = "PocketWatchParentGate-PocketWatchParentGate";
-		};
-		46EB2E00000990 /* PBXContainerItemProxy */ = {
+		46EB2E00000A70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6AC2725F1154DD3F9C17B6A1895ACAB;
 			remoteInfo = ZappPlugins;
 		};
-		46EB2E000009B0 /* PBXContainerItemProxy */ = {
+		46EB2E00000A90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
@@ -101,94 +105,96 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46EB2E000000E0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000000F0 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PocketWatchParentGate/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		46EB2E00000100 /* PipesDataModelHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelper.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelper.swift; sourceTree = "<group>"; };
-		46EB2E00000110 /* PipesDataModelHelperContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperContent.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperContent.swift; sourceTree = "<group>"; };
-		46EB2E00000120 /* PipesDataModelHelperExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperExtensions.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperExtensions.swift; sourceTree = "<group>"; };
-		46EB2E00000130 /* PipesDataModelHelperMediaGroups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperMediaGroups.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperMediaGroups.swift; sourceTree = "<group>"; };
-		46EB2E00000140 /* PipesDataModelHelperMediaItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperMediaItem.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperMediaItem.swift; sourceTree = "<group>"; };
-		46EB2E00000150 /* ZPAdapterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZPAdapterProtocol.swift; path = Frameworks/ZappCore/Universal/PluginModel/ZPAdapterProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000160 /* ZPPluginModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZPPluginModel.swift; path = Frameworks/ZappCore/Universal/PluginModel/ZPPluginModel.swift; sourceTree = "<group>"; };
-		46EB2E00000170 /* AnalyticsProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalyticsProviderProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/Analytics/Protocols/AnalyticsProviderProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000180 /* PlayerObserverProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerObserverProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/Player/PlayerObserverProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000190 /* PlayerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/Player/PlayerProtocol.swift; sourceTree = "<group>"; };
-		46EB2E000001A0 /* DependablePlayerAdDelegatePluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependablePlayerAdDelegatePluginProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/PlayerDependantsPlugins/Protocols/DependablePlayerAdDelegatePluginProtocol.swift; sourceTree = "<group>"; };
-		46EB2E000001B0 /* DependablePlayerPluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependablePlayerPluginProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/PlayerDependantsPlugins/Protocols/DependablePlayerPluginProtocol.swift; sourceTree = "<group>"; };
-		46EB2E000001C0 /* PlayerDependantPluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerDependantPluginProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/PlayerDependantsPlugins/Protocols/PlayerDependantPluginProtocol.swift; sourceTree = "<group>"; };
-		46EB2E000001D0 /* FacadeConnector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnector.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/FacadeConnector.swift; sourceTree = "<group>"; };
-		46EB2E000001E0 /* FacadeConnectorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/FacadeConnectorProtocol.swift; sourceTree = "<group>"; };
-		46EB2E000001F0 /* FacadeConnectorAnalyticsProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorAnalyticsProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorAnalyticsProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000200 /* FacadeConnectorAppDataProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorAppDataProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorAppDataProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000210 /* FacadeConnectorPlayerDependantProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorPlayerDependantProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorPlayerDependantProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000220 /* FacadeConnectorPluginManagerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorPluginManagerProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorPluginManagerProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000230 /* FacadeConnectorStorageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorStorageProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorStorageProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000240 /* UserInterfaceLayerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterfaceLayerProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/UserInterfaceLayerProtocol/UserInterfaceLayerProtocol.swift; sourceTree = "<group>"; };
-		46EB2E00000260 /* ZappPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZappPlugins.framework; path = Frameworks/iOS/ZappPlugins.framework; sourceTree = "<group>"; };
-		46EB2E00000280 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00000290 /* PocketWatchParentGate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PocketWatchParentGate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000002A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00000350 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E00000400 /* ResourceBundle-PocketWatchParentGate-PocketWatchParentGate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PocketWatchParentGate-PocketWatchParentGate-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000420 /* PocketWatchParentGate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketWatchParentGate.xcconfig; sourceTree = "<group>"; };
-		46EB2E00000430 /* PocketWatchParentGate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PocketWatchParentGate.modulemap; sourceTree = "<group>"; };
-		46EB2E00000440 /* PocketWatchParentGate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketWatchParentGate-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00000460 /* PocketWatchParentGate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PocketWatchParentGate-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000470 /* PocketWatchParentGate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketWatchParentGate-prefix.pch"; sourceTree = "<group>"; };
-		46EB2E00000480 /* PocketWatchParentGate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PocketWatchParentGate-dummy.m"; sourceTree = "<group>"; };
-		46EB2E000006A0 /* ZappCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZappCore.xcconfig; sourceTree = "<group>"; };
-		46EB2E000006B0 /* ZappCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZappCore.modulemap; sourceTree = "<group>"; };
-		46EB2E000006C0 /* ZappCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZappCore-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E000006E0 /* ZappCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZappCore-Info.plist"; sourceTree = "<group>"; };
-		46EB2E000006F0 /* ZappCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZappCore-prefix.pch"; sourceTree = "<group>"; };
-		46EB2E00000700 /* ZappCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZappCore-dummy.m"; sourceTree = "<group>"; };
-		46EB2E00000770 /* ZappPlugins.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZappPlugins.xcconfig; sourceTree = "<group>"; };
-		46EB2E00000780 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E00000850 /* Pods-PocketWatchParentGateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketWatchParentGateExample.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000860 /* Pods-PocketWatchParentGateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketWatchParentGateExample.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00000870 /* Pods-PocketWatchParentGateExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketWatchParentGateExample-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00000880 /* Pods-PocketWatchParentGateExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PocketWatchParentGateExample.modulemap"; sourceTree = "<group>"; };
-		46EB2E00000890 /* Pods-PocketWatchParentGateExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PocketWatchParentGateExample-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E000008B0 /* Pods-PocketWatchParentGateExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketWatchParentGateExample-frameworks.sh"; sourceTree = "<group>"; };
-		46EB2E000008C0 /* Pods-PocketWatchParentGateExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketWatchParentGateExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E000008D0 /* Pods-PocketWatchParentGateExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketWatchParentGateExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E000008E0 /* Pods-PocketWatchParentGateExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketWatchParentGateExample-dummy.m"; sourceTree = "<group>"; };
-		5341B3A50D9226B639205BB9FFCF1EE2 /* PocketWatchParentGate.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PocketWatchParentGate.bundle; path = "PocketWatchParentGate-PocketWatchParentGate.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketWatchParentGateExample.framework; path = "Pods-PocketWatchParentGateExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZappCore.framework; path = ZappCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PocketWatchParentGate.framework; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EB2E000000E0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000000F0 /* PocketWatchParentGate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PocketWatchParentGate.swift; path = PocketWatchParentGate/PocketWatchParentGate.swift; sourceTree = "<group>"; };
+		46EB2E00000110 /* FlexibleInsetsTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleInsetsTextField.swift; path = PocketWatchParentGate/Classes/FlexibleInsetsTextField.swift; sourceTree = "<group>"; };
+		46EB2E00000120 /* ParentGateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParentGateViewController.swift; path = PocketWatchParentGate/Classes/ParentGateViewController.swift; sourceTree = "<group>"; };
+		46EB2E00000140 /* PopupStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = PopupStoryboard.storyboard; path = PocketWatchParentGate/Classes/Popups/PopupStoryboard.storyboard; sourceTree = "<group>"; };
+		46EB2E00000150 /* TextFieldPopupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldPopupViewController.swift; path = PocketWatchParentGate/Classes/Popups/TextFieldPopupViewController.swift; sourceTree = "<group>"; };
+		46EB2E00000170 /* UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = PocketWatchParentGate/Extensions/UIFont.swift; sourceTree = "<group>"; };
+		46EB2E00000190 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = PocketWatchParentGate/Extensions/UIViewController.swift; sourceTree = "<group>"; };
+		46EB2E000001A0 /* PipesDataModelHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelper.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelper.swift; sourceTree = "<group>"; };
+		46EB2E000001B0 /* PipesDataModelHelperContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperContent.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperContent.swift; sourceTree = "<group>"; };
+		46EB2E000001C0 /* PipesDataModelHelperExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperExtensions.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperExtensions.swift; sourceTree = "<group>"; };
+		46EB2E000001D0 /* PipesDataModelHelperMediaGroups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperMediaGroups.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperMediaGroups.swift; sourceTree = "<group>"; };
+		46EB2E000001E0 /* PipesDataModelHelperMediaItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelperMediaItem.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelperMediaItem.swift; sourceTree = "<group>"; };
+		46EB2E000001F0 /* ZPAdapterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZPAdapterProtocol.swift; path = Frameworks/ZappCore/Universal/PluginModel/ZPAdapterProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000200 /* ZPPluginModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZPPluginModel.swift; path = Frameworks/ZappCore/Universal/PluginModel/ZPPluginModel.swift; sourceTree = "<group>"; };
+		46EB2E00000210 /* AnalyticsProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalyticsProviderProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/Analytics/Protocols/AnalyticsProviderProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000220 /* PlayerObserverProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerObserverProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/Player/PlayerObserverProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000230 /* PlayerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/Player/PlayerProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000240 /* DependablePlayerAdDelegatePluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependablePlayerAdDelegatePluginProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/PlayerDependantsPlugins/Protocols/DependablePlayerAdDelegatePluginProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000250 /* DependablePlayerPluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependablePlayerPluginProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/PlayerDependantsPlugins/Protocols/DependablePlayerPluginProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000260 /* PlayerDependantPluginProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerDependantPluginProtocol.swift; path = Frameworks/ZappCore/Universal/Plugins/PlayerDependantsPlugins/Protocols/PlayerDependantPluginProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000270 /* FacadeConnector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnector.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/FacadeConnector.swift; sourceTree = "<group>"; };
+		46EB2E00000280 /* FacadeConnectorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/FacadeConnectorProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000290 /* FacadeConnectorAnalyticsProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorAnalyticsProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorAnalyticsProtocol.swift; sourceTree = "<group>"; };
+		46EB2E000002A0 /* FacadeConnectorAppDataProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorAppDataProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorAppDataProtocol.swift; sourceTree = "<group>"; };
+		46EB2E000002B0 /* FacadeConnectorPlayerDependantProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorPlayerDependantProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorPlayerDependantProtocol.swift; sourceTree = "<group>"; };
+		46EB2E000002C0 /* FacadeConnectorPluginManagerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorPluginManagerProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorPluginManagerProtocol.swift; sourceTree = "<group>"; };
+		46EB2E000002D0 /* FacadeConnectorStorageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorStorageProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorStorageProtocol.swift; sourceTree = "<group>"; };
+		46EB2E000002E0 /* UserInterfaceLayerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterfaceLayerProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/UserInterfaceLayerProtocol/UserInterfaceLayerProtocol.swift; sourceTree = "<group>"; };
+		46EB2E00000300 /* ZappPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZappPlugins.framework; path = Frameworks/iOS/ZappPlugins.framework; sourceTree = "<group>"; };
+		46EB2E00000320 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Metropolis-Bold.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		46EB2E00000330 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Metropolis-Medium.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		46EB2E00000340 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Metropolis-Regular.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		46EB2E00000350 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PocketWatchParentGate/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		46EB2E00000370 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00000380 /* PocketWatchParentGate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PocketWatchParentGate.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		46EB2E00000390 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00000440 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46EB2E00000530 /* PocketWatchParentGate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketWatchParentGate.xcconfig; sourceTree = "<group>"; };
+		46EB2E00000540 /* PocketWatchParentGate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PocketWatchParentGate.modulemap; sourceTree = "<group>"; };
+		46EB2E00000550 /* PocketWatchParentGate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketWatchParentGate-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00000570 /* PocketWatchParentGate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PocketWatchParentGate-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000580 /* PocketWatchParentGate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PocketWatchParentGate-prefix.pch"; sourceTree = "<group>"; };
+		46EB2E00000590 /* PocketWatchParentGate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PocketWatchParentGate-dummy.m"; sourceTree = "<group>"; };
+		46EB2E000007B0 /* ZappCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZappCore.xcconfig; sourceTree = "<group>"; };
+		46EB2E000007C0 /* ZappCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZappCore.modulemap; sourceTree = "<group>"; };
+		46EB2E000007D0 /* ZappCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZappCore-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E000007F0 /* ZappCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZappCore-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000800 /* ZappCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZappCore-prefix.pch"; sourceTree = "<group>"; };
+		46EB2E00000810 /* ZappCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZappCore-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00000880 /* ZappPlugins.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZappPlugins.xcconfig; sourceTree = "<group>"; };
+		46EB2E00000890 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		46EB2E00000960 /* Pods-PocketWatchParentGateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketWatchParentGateExample.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000970 /* Pods-PocketWatchParentGateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PocketWatchParentGateExample.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00000980 /* Pods-PocketWatchParentGateExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketWatchParentGateExample-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00000990 /* Pods-PocketWatchParentGateExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PocketWatchParentGateExample.modulemap"; sourceTree = "<group>"; };
+		46EB2E000009A0 /* Pods-PocketWatchParentGateExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PocketWatchParentGateExample-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E000009C0 /* Pods-PocketWatchParentGateExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PocketWatchParentGateExample-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E000009D0 /* Pods-PocketWatchParentGateExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketWatchParentGateExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E000009E0 /* Pods-PocketWatchParentGateExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketWatchParentGateExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E000009F0 /* Pods-PocketWatchParentGateExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketWatchParentGateExample-dummy.m"; sourceTree = "<group>"; };
+		81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketWatchParentGateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE09229423B4B5C300C5798C /* UICollor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollor.swift; sourceTree = "<group>"; };
+		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46EB2E00000320 /* Frameworks */ = {
+		46EB2E00000410 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000360 /* Foundation.framework in Frameworks */,
-				46EB2E00000790 /* UIKit.framework in Frameworks */,
+				46EB2E00000450 /* Foundation.framework in Frameworks */,
+				46EB2E000008A0 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000003D0 /* Frameworks */ = {
+		46EB2E00000620 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EB2E00000640 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000510 /* Frameworks */ = {
+		46EB2E00000920 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000530 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46EB2E00000810 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46EB2E00000830 /* Foundation.framework in Frameworks */,
+				46EB2E00000940 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +216,6 @@
 		46EB2E00000020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5341B3A50D9226B639205BB9FFCF1EE2 /* PocketWatchParentGate.bundle */,
 				F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */,
 				81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */,
 				83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */,
@@ -221,7 +226,7 @@
 		46EB2E00000060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000340 /* iOS */,
+				46EB2E00000430 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,7 +234,7 @@
 		46EB2E00000070 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000840 /* Pods-PocketWatchParentGateExample */,
+				46EB2E00000950 /* Pods-PocketWatchParentGateExample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -254,9 +259,12 @@
 		46EB2E000000B0 /* PocketWatchParentGate */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000000F0 /* ReplaceMe.swift */,
-				46EB2E00000270 /* Pod */,
-				46EB2E000003F0 /* Support Files */,
+				46EB2E000000F0 /* PocketWatchParentGate.swift */,
+				46EB2E00000100 /* Classes */,
+				46EB2E00000160 /* Extensions */,
+				46EB2E00000360 /* Pod */,
+				46EB2E00000310 /* Resources */,
+				46EB2E00000520 /* Support Files */,
 			);
 			name = PocketWatchParentGate;
 			path = ../..;
@@ -265,120 +273,157 @@
 		46EB2E000000C0 /* ZappCore */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000170 /* AnalyticsProviderProtocol.swift */,
-				46EB2E000001A0 /* DependablePlayerAdDelegatePluginProtocol.swift */,
-				46EB2E000001B0 /* DependablePlayerPluginProtocol.swift */,
-				46EB2E000001D0 /* FacadeConnector.swift */,
-				46EB2E000001F0 /* FacadeConnectorAnalyticsProtocol.swift */,
-				46EB2E00000200 /* FacadeConnectorAppDataProtocol.swift */,
-				46EB2E00000210 /* FacadeConnectorPlayerDependantProtocol.swift */,
-				46EB2E00000220 /* FacadeConnectorPluginManagerProtocol.swift */,
-				46EB2E000001E0 /* FacadeConnectorProtocol.swift */,
-				46EB2E00000230 /* FacadeConnectorStorageProtocol.swift */,
-				46EB2E00000100 /* PipesDataModelHelper.swift */,
-				46EB2E00000110 /* PipesDataModelHelperContent.swift */,
-				46EB2E00000120 /* PipesDataModelHelperExtensions.swift */,
-				46EB2E00000130 /* PipesDataModelHelperMediaGroups.swift */,
-				46EB2E00000140 /* PipesDataModelHelperMediaItem.swift */,
-				46EB2E000001C0 /* PlayerDependantPluginProtocol.swift */,
-				46EB2E00000180 /* PlayerObserverProtocol.swift */,
-				46EB2E00000190 /* PlayerProtocol.swift */,
-				46EB2E00000240 /* UserInterfaceLayerProtocol.swift */,
-				46EB2E00000150 /* ZPAdapterProtocol.swift */,
-				46EB2E00000160 /* ZPPluginModel.swift */,
-				46EB2E00000690 /* Support Files */,
+				46EB2E00000210 /* AnalyticsProviderProtocol.swift */,
+				46EB2E00000240 /* DependablePlayerAdDelegatePluginProtocol.swift */,
+				46EB2E00000250 /* DependablePlayerPluginProtocol.swift */,
+				46EB2E00000270 /* FacadeConnector.swift */,
+				46EB2E00000290 /* FacadeConnectorAnalyticsProtocol.swift */,
+				46EB2E000002A0 /* FacadeConnectorAppDataProtocol.swift */,
+				46EB2E000002B0 /* FacadeConnectorPlayerDependantProtocol.swift */,
+				46EB2E000002C0 /* FacadeConnectorPluginManagerProtocol.swift */,
+				46EB2E00000280 /* FacadeConnectorProtocol.swift */,
+				46EB2E000002D0 /* FacadeConnectorStorageProtocol.swift */,
+				46EB2E000001A0 /* PipesDataModelHelper.swift */,
+				46EB2E000001B0 /* PipesDataModelHelperContent.swift */,
+				46EB2E000001C0 /* PipesDataModelHelperExtensions.swift */,
+				46EB2E000001D0 /* PipesDataModelHelperMediaGroups.swift */,
+				46EB2E000001E0 /* PipesDataModelHelperMediaItem.swift */,
+				46EB2E00000260 /* PlayerDependantPluginProtocol.swift */,
+				46EB2E00000220 /* PlayerObserverProtocol.swift */,
+				46EB2E00000230 /* PlayerProtocol.swift */,
+				46EB2E000002E0 /* UserInterfaceLayerProtocol.swift */,
+				46EB2E000001F0 /* ZPAdapterProtocol.swift */,
+				46EB2E00000200 /* ZPPluginModel.swift */,
+				46EB2E000007A0 /* Support Files */,
 			);
-			name = ZappCore;
 			path = ZappCore;
 			sourceTree = "<group>";
 		};
 		46EB2E000000D0 /* ZappPlugins */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000250 /* Frameworks */,
-				46EB2E00000760 /* Support Files */,
+				46EB2E000002F0 /* Frameworks */,
+				46EB2E00000870 /* Support Files */,
 			);
-			name = ZappPlugins;
 			path = ZappPlugins;
 			sourceTree = "<group>";
 		};
-		46EB2E00000250 /* Frameworks */ = {
+		46EB2E00000100 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000260 /* ZappPlugins.framework */,
+				46EB2E00000110 /* FlexibleInsetsTextField.swift */,
+				46EB2E00000120 /* ParentGateViewController.swift */,
+				46EB2E00000130 /* Popups */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		46EB2E00000130 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00000140 /* PopupStoryboard.storyboard */,
+				46EB2E00000150 /* TextFieldPopupViewController.swift */,
+			);
+			name = Popups;
+			sourceTree = "<group>";
+		};
+		46EB2E00000160 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00000170 /* UIFont.swift */,
+				46EB2E00000190 /* UIViewController.swift */,
+				BE09229423B4B5C300C5798C /* UICollor.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		46EB2E000002F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00000300 /* ZappPlugins.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46EB2E00000270 /* Pod */ = {
+		46EB2E00000310 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000280 /* LICENSE */,
-				46EB2E00000290 /* PocketWatchParentGate.podspec */,
-				46EB2E000002A0 /* README.md */,
+				46EB2E00000350 /* Assets.xcassets */,
+				46EB2E00000320 /* Metropolis-Bold.otf */,
+				46EB2E00000330 /* Metropolis-Medium.otf */,
+				46EB2E00000340 /* Metropolis-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		46EB2E00000360 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00000370 /* LICENSE */,
+				46EB2E00000380 /* PocketWatchParentGate.podspec */,
+				46EB2E00000390 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		46EB2E00000340 /* iOS */ = {
+		46EB2E00000430 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000350 /* Foundation.framework */,
-				46EB2E00000780 /* UIKit.framework */,
+				46EB2E00000440 /* Foundation.framework */,
+				46EB2E00000890 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46EB2E000003F0 /* Support Files */ = {
+		46EB2E00000520 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000430 /* PocketWatchParentGate.modulemap */,
-				46EB2E00000420 /* PocketWatchParentGate.xcconfig */,
-				46EB2E00000480 /* PocketWatchParentGate-dummy.m */,
-				46EB2E00000460 /* PocketWatchParentGate-Info.plist */,
-				46EB2E00000470 /* PocketWatchParentGate-prefix.pch */,
-				46EB2E00000440 /* PocketWatchParentGate-umbrella.h */,
-				46EB2E00000400 /* ResourceBundle-PocketWatchParentGate-PocketWatchParentGate-Info.plist */,
+				46EB2E00000540 /* PocketWatchParentGate.modulemap */,
+				46EB2E00000530 /* PocketWatchParentGate.xcconfig */,
+				46EB2E00000590 /* PocketWatchParentGate-dummy.m */,
+				46EB2E00000570 /* PocketWatchParentGate-Info.plist */,
+				46EB2E00000580 /* PocketWatchParentGate-prefix.pch */,
+				46EB2E00000550 /* PocketWatchParentGate-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PocketWatchParentGate";
 			sourceTree = "<group>";
 		};
-		46EB2E00000690 /* Support Files */ = {
+		46EB2E000007A0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000006B0 /* ZappCore.modulemap */,
-				46EB2E000006A0 /* ZappCore.xcconfig */,
-				46EB2E00000700 /* ZappCore-dummy.m */,
-				46EB2E000006E0 /* ZappCore-Info.plist */,
-				46EB2E000006F0 /* ZappCore-prefix.pch */,
-				46EB2E000006C0 /* ZappCore-umbrella.h */,
+				46EB2E000007C0 /* ZappCore.modulemap */,
+				46EB2E000007B0 /* ZappCore.xcconfig */,
+				46EB2E00000810 /* ZappCore-dummy.m */,
+				46EB2E000007F0 /* ZappCore-Info.plist */,
+				46EB2E00000800 /* ZappCore-prefix.pch */,
+				46EB2E000007D0 /* ZappCore-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ZappCore";
 			sourceTree = "<group>";
 		};
-		46EB2E00000760 /* Support Files */ = {
+		46EB2E00000870 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000770 /* ZappPlugins.xcconfig */,
+				46EB2E00000880 /* ZappPlugins.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ZappPlugins";
 			sourceTree = "<group>";
 		};
-		46EB2E00000840 /* Pods-PocketWatchParentGateExample */ = {
+		46EB2E00000950 /* Pods-PocketWatchParentGateExample */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000880 /* Pods-PocketWatchParentGateExample.modulemap */,
-				46EB2E000008D0 /* Pods-PocketWatchParentGateExample-acknowledgements.markdown */,
-				46EB2E000008C0 /* Pods-PocketWatchParentGateExample-acknowledgements.plist */,
-				46EB2E000008E0 /* Pods-PocketWatchParentGateExample-dummy.m */,
-				46EB2E000008B0 /* Pods-PocketWatchParentGateExample-frameworks.sh */,
-				46EB2E00000870 /* Pods-PocketWatchParentGateExample-Info.plist */,
-				46EB2E00000890 /* Pods-PocketWatchParentGateExample-umbrella.h */,
-				46EB2E00000860 /* Pods-PocketWatchParentGateExample.debug.xcconfig */,
-				46EB2E00000850 /* Pods-PocketWatchParentGateExample.release.xcconfig */,
+				46EB2E00000990 /* Pods-PocketWatchParentGateExample.modulemap */,
+				46EB2E000009E0 /* Pods-PocketWatchParentGateExample-acknowledgements.markdown */,
+				46EB2E000009D0 /* Pods-PocketWatchParentGateExample-acknowledgements.plist */,
+				46EB2E000009F0 /* Pods-PocketWatchParentGateExample-dummy.m */,
+				46EB2E000009C0 /* Pods-PocketWatchParentGateExample-frameworks.sh */,
+				46EB2E00000980 /* Pods-PocketWatchParentGateExample-Info.plist */,
+				46EB2E000009A0 /* Pods-PocketWatchParentGateExample-umbrella.h */,
+				46EB2E00000970 /* Pods-PocketWatchParentGateExample.debug.xcconfig */,
+				46EB2E00000960 /* Pods-PocketWatchParentGateExample.release.xcconfig */,
 			);
 			name = "Pods-PocketWatchParentGateExample";
 			path = "Target Support Files/Pods-PocketWatchParentGateExample";
@@ -387,27 +432,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46EB2E00000300 /* Headers */ = {
+		46EB2E000003F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000450 /* PocketWatchParentGate-umbrella.h in Headers */,
+				46EB2E00000560 /* PocketWatchParentGate-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000004F0 /* Headers */ = {
+		46EB2E00000600 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000006D0 /* ZappCore-umbrella.h in Headers */,
+				46EB2E000007E0 /* ZappCore-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000007F0 /* Headers */ = {
+		46EB2E00000900 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000008A0 /* Pods-PocketWatchParentGateExample-umbrella.h in Headers */,
+				46EB2E000009B0 /* Pods-PocketWatchParentGateExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,56 +461,38 @@
 /* Begin PBXNativeTarget section */
 		2F76CE1A0A0B317AE3FECC2B7ACFFE07 /* PocketWatchParentGate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E000002C0 /* Build configuration list for PBXNativeTarget "PocketWatchParentGate" */;
+			buildConfigurationList = 46EB2E000003B0 /* Build configuration list for PBXNativeTarget "PocketWatchParentGate" */;
 			buildPhases = (
-				46EB2E00000300 /* Headers */,
-				46EB2E00000310 /* Sources */,
-				46EB2E00000320 /* Frameworks */,
-				46EB2E00000330 /* Resources */,
+				46EB2E000003F0 /* Headers */,
+				46EB2E00000400 /* Sources */,
+				46EB2E00000410 /* Frameworks */,
+				46EB2E00000420 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00000970 /* PBXTargetDependency */,
-				46EB2E000009A0 /* PBXTargetDependency */,
+				46EB2E00000A80 /* PBXTargetDependency */,
 			);
 			name = PocketWatchParentGate;
 			productName = PocketWatchParentGate;
 			productReference = F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		84A20EEF714338CEECE91666A5500197 /* PocketWatchParentGate-PocketWatchParentGate */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00000380 /* Build configuration list for PBXNativeTarget "PocketWatchParentGate-PocketWatchParentGate" */;
-			buildPhases = (
-				46EB2E000003C0 /* Sources */,
-				46EB2E000003D0 /* Frameworks */,
-				46EB2E000003E0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PocketWatchParentGate-PocketWatchParentGate";
-			productName = "PocketWatchParentGate-PocketWatchParentGate";
-			productReference = 5341B3A50D9226B639205BB9FFCF1EE2 /* PocketWatchParentGate.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		8F40FA438188DE7F24EFE8FF509A916D /* Pods-PocketWatchParentGateExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E000007B0 /* Build configuration list for PBXNativeTarget "Pods-PocketWatchParentGateExample" */;
+			buildConfigurationList = 46EB2E000008C0 /* Build configuration list for PBXNativeTarget "Pods-PocketWatchParentGateExample" */;
 			buildPhases = (
-				46EB2E000007F0 /* Headers */,
-				46EB2E00000800 /* Sources */,
-				46EB2E00000810 /* Frameworks */,
-				46EB2E00000820 /* Resources */,
+				46EB2E00000900 /* Headers */,
+				46EB2E00000910 /* Sources */,
+				46EB2E00000920 /* Frameworks */,
+				46EB2E00000930 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00000910 /* PBXTargetDependency */,
-				46EB2E00000930 /* PBXTargetDependency */,
-				46EB2E00000950 /* PBXTargetDependency */,
+				46EB2E00000A20 /* PBXTargetDependency */,
+				46EB2E00000A40 /* PBXTargetDependency */,
+				46EB2E00000A60 /* PBXTargetDependency */,
 			);
 			name = "Pods-PocketWatchParentGateExample";
 			productName = "Pods-PocketWatchParentGateExample";
@@ -474,12 +501,12 @@
 		};
 		AC86F9CD63A142C83EDE5E649431993D /* ZappCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E000004B0 /* Build configuration list for PBXNativeTarget "ZappCore" */;
+			buildConfigurationList = 46EB2E000005C0 /* Build configuration list for PBXNativeTarget "ZappCore" */;
 			buildPhases = (
-				46EB2E000004F0 /* Headers */,
-				46EB2E00000500 /* Sources */,
-				46EB2E00000510 /* Frameworks */,
-				46EB2E00000520 /* Resources */,
+				46EB2E00000600 /* Headers */,
+				46EB2E00000610 /* Sources */,
+				46EB2E00000620 /* Frameworks */,
+				46EB2E00000630 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -513,7 +540,6 @@
 			projectRoot = "";
 			targets = (
 				2F76CE1A0A0B317AE3FECC2B7ACFFE07 /* PocketWatchParentGate */,
-				84A20EEF714338CEECE91666A5500197 /* PocketWatchParentGate-PocketWatchParentGate */,
 				8F40FA438188DE7F24EFE8FF509A916D /* Pods-PocketWatchParentGateExample */,
 				AC86F9CD63A142C83EDE5E649431993D /* ZappCore */,
 				D6AC2725F1154DD3F9C17B6A1895ACAB /* ZappPlugins */,
@@ -522,29 +548,25 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46EB2E00000330 /* Resources */ = {
+		46EB2E00000420 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000980 /* PocketWatchParentGate.bundle in Resources */,
+				46EB2E000004A0 /* Assets.xcassets in Resources */,
+				46EB2E00000470 /* Metropolis-Bold.otf in Resources */,
+				46EB2E00000480 /* Metropolis-Medium.otf in Resources */,
+				46EB2E00000490 /* Metropolis-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000003E0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46EB2E00000520 /* Resources */ = {
+		46EB2E00000630 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000820 /* Resources */ = {
+		46EB2E00000930 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,97 +576,91 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46EB2E00000310 /* Sources */ = {
+		46EB2E00000400 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000490 /* PocketWatchParentGate-dummy.m in Sources */,
-				46EB2E00000410 /* ReplaceMe.swift in Sources */,
+				46EB2E000004B0 /* FlexibleInsetsTextField.swift in Sources */,
+				46EB2E000004C0 /* ParentGateViewController.swift in Sources */,
+				46EB2E000005A0 /* PocketWatchParentGate-dummy.m in Sources */,
+				46EB2E00000460 /* PocketWatchParentGate.swift in Sources */,
+				46EB2E000004E0 /* PopupStoryboard.storyboard in Sources */,
+				46EB2E000004D0 /* TextFieldPopupViewController.swift in Sources */,
+				BE09229523B4B5C300C5798C /* UICollor.swift in Sources */,
+				46EB2E000004F0 /* UIFont.swift in Sources */,
+				46EB2E00000510 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E000003C0 /* Sources */ = {
+		46EB2E00000610 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EB2E000006C0 /* AnalyticsProviderProtocol.swift in Sources */,
+				46EB2E000006F0 /* DependablePlayerAdDelegatePluginProtocol.swift in Sources */,
+				46EB2E00000700 /* DependablePlayerPluginProtocol.swift in Sources */,
+				46EB2E00000720 /* FacadeConnector.swift in Sources */,
+				46EB2E00000740 /* FacadeConnectorAnalyticsProtocol.swift in Sources */,
+				46EB2E00000750 /* FacadeConnectorAppDataProtocol.swift in Sources */,
+				46EB2E00000760 /* FacadeConnectorPlayerDependantProtocol.swift in Sources */,
+				46EB2E00000770 /* FacadeConnectorPluginManagerProtocol.swift in Sources */,
+				46EB2E00000730 /* FacadeConnectorProtocol.swift in Sources */,
+				46EB2E00000780 /* FacadeConnectorStorageProtocol.swift in Sources */,
+				46EB2E00000650 /* PipesDataModelHelper.swift in Sources */,
+				46EB2E00000660 /* PipesDataModelHelperContent.swift in Sources */,
+				46EB2E00000670 /* PipesDataModelHelperExtensions.swift in Sources */,
+				46EB2E00000680 /* PipesDataModelHelperMediaGroups.swift in Sources */,
+				46EB2E00000690 /* PipesDataModelHelperMediaItem.swift in Sources */,
+				46EB2E00000710 /* PlayerDependantPluginProtocol.swift in Sources */,
+				46EB2E000006D0 /* PlayerObserverProtocol.swift in Sources */,
+				46EB2E000006E0 /* PlayerProtocol.swift in Sources */,
+				46EB2E00000790 /* UserInterfaceLayerProtocol.swift in Sources */,
+				46EB2E00000820 /* ZappCore-dummy.m in Sources */,
+				46EB2E000006A0 /* ZPAdapterProtocol.swift in Sources */,
+				46EB2E000006B0 /* ZPPluginModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00000500 /* Sources */ = {
+		46EB2E00000910 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E000005B0 /* AnalyticsProviderProtocol.swift in Sources */,
-				46EB2E000005E0 /* DependablePlayerAdDelegatePluginProtocol.swift in Sources */,
-				46EB2E000005F0 /* DependablePlayerPluginProtocol.swift in Sources */,
-				46EB2E00000610 /* FacadeConnector.swift in Sources */,
-				46EB2E00000630 /* FacadeConnectorAnalyticsProtocol.swift in Sources */,
-				46EB2E00000640 /* FacadeConnectorAppDataProtocol.swift in Sources */,
-				46EB2E00000650 /* FacadeConnectorPlayerDependantProtocol.swift in Sources */,
-				46EB2E00000660 /* FacadeConnectorPluginManagerProtocol.swift in Sources */,
-				46EB2E00000620 /* FacadeConnectorProtocol.swift in Sources */,
-				46EB2E00000670 /* FacadeConnectorStorageProtocol.swift in Sources */,
-				46EB2E00000540 /* PipesDataModelHelper.swift in Sources */,
-				46EB2E00000550 /* PipesDataModelHelperContent.swift in Sources */,
-				46EB2E00000560 /* PipesDataModelHelperExtensions.swift in Sources */,
-				46EB2E00000570 /* PipesDataModelHelperMediaGroups.swift in Sources */,
-				46EB2E00000580 /* PipesDataModelHelperMediaItem.swift in Sources */,
-				46EB2E00000600 /* PlayerDependantPluginProtocol.swift in Sources */,
-				46EB2E000005C0 /* PlayerObserverProtocol.swift in Sources */,
-				46EB2E000005D0 /* PlayerProtocol.swift in Sources */,
-				46EB2E00000680 /* UserInterfaceLayerProtocol.swift in Sources */,
-				46EB2E00000710 /* ZappCore-dummy.m in Sources */,
-				46EB2E00000590 /* ZPAdapterProtocol.swift in Sources */,
-				46EB2E000005A0 /* ZPPluginModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46EB2E00000800 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46EB2E000008F0 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */,
+				46EB2E00000A00 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46EB2E00000910 /* PBXTargetDependency */ = {
+		46EB2E00000A20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PocketWatchParentGate;
 			target = 2F76CE1A0A0B317AE3FECC2B7ACFFE07 /* PocketWatchParentGate */;
-			targetProxy = 46EB2E00000900 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000A10 /* PBXContainerItemProxy */;
 		};
-		46EB2E00000930 /* PBXTargetDependency */ = {
+		46EB2E00000A40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZappCore;
 			target = AC86F9CD63A142C83EDE5E649431993D /* ZappCore */;
-			targetProxy = 46EB2E00000920 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000A30 /* PBXContainerItemProxy */;
 		};
-		46EB2E00000950 /* PBXTargetDependency */ = {
+		46EB2E00000A60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZappPlugins;
 			target = D6AC2725F1154DD3F9C17B6A1895ACAB /* ZappPlugins */;
-			targetProxy = 46EB2E00000940 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000A50 /* PBXContainerItemProxy */;
 		};
-		46EB2E00000970 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "PocketWatchParentGate-PocketWatchParentGate";
-			target = 84A20EEF714338CEECE91666A5500197 /* PocketWatchParentGate-PocketWatchParentGate */;
-			targetProxy = 46EB2E00000960 /* PBXContainerItemProxy */;
-		};
-		46EB2E000009A0 /* PBXTargetDependency */ = {
+		46EB2E00000A80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZappPlugins;
 			target = D6AC2725F1154DD3F9C17B6A1895ACAB /* ZappPlugins */;
-			targetProxy = 46EB2E00000990 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000A70 /* PBXContainerItemProxy */;
 		};
-		46EB2E000009C0 /* PBXTargetDependency */ = {
+		46EB2E00000AA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZappCore;
 			target = AC86F9CD63A142C83EDE5E649431993D /* ZappCore */;
-			targetProxy = 46EB2E000009B0 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000A90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -766,16 +782,15 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		46EB2E000002D0 /* Release */ = {
+		46EB2E000003C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000420 /* PocketWatchParentGate.xcconfig */;
+			baseConfigurationReference = 46EB2E00000530 /* PocketWatchParentGate.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -806,9 +821,9 @@
 			};
 			name = Release;
 		};
-		46EB2E000002E0 /* Debug */ = {
+		46EB2E000003D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000420 /* PocketWatchParentGate.xcconfig */;
+			baseConfigurationReference = 46EB2E00000530 /* PocketWatchParentGate.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -838,45 +853,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E00000390 /* Release */ = {
+		46EB2E000005D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000420 /* PocketWatchParentGate.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PocketWatchParentGate";
-				IBSC_MODULE = PocketWatchParentGate;
-				INFOPLIST_FILE = "Target Support Files/PocketWatchParentGate/ResourceBundle-PocketWatchParentGate-PocketWatchParentGate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = PocketWatchParentGate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		46EB2E000003A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000420 /* PocketWatchParentGate.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PocketWatchParentGate";
-				IBSC_MODULE = PocketWatchParentGate;
-				INFOPLIST_FILE = "Target Support Files/PocketWatchParentGate/ResourceBundle-PocketWatchParentGate-PocketWatchParentGate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = PocketWatchParentGate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		46EB2E000004C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000006A0 /* ZappCore.xcconfig */;
+			baseConfigurationReference = 46EB2E000007B0 /* ZappCore.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -907,9 +886,9 @@
 			};
 			name = Release;
 		};
-		46EB2E000004D0 /* Debug */ = {
+		46EB2E000005E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000006A0 /* ZappCore.xcconfig */;
+			baseConfigurationReference = 46EB2E000007B0 /* ZappCore.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -939,9 +918,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E00000740 /* Release */ = {
+		46EB2E00000850 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000770 /* ZappPlugins.xcconfig */;
+			baseConfigurationReference = 46EB2E00000880 /* ZappPlugins.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -955,9 +934,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000750 /* Debug */ = {
+		46EB2E00000860 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000770 /* ZappPlugins.xcconfig */;
+			baseConfigurationReference = 46EB2E00000880 /* ZappPlugins.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -970,9 +949,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E000007C0 /* Release */ = {
+		46EB2E000008D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000850 /* Pods-PocketWatchParentGateExample.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00000960 /* Pods-PocketWatchParentGateExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1006,9 +985,9 @@
 			};
 			name = Release;
 		};
-		46EB2E000007D0 /* Debug */ = {
+		46EB2E000008E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00000860 /* Pods-PocketWatchParentGateExample.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00000970 /* Pods-PocketWatchParentGateExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1053,47 +1032,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E000002C0 /* Build configuration list for PBXNativeTarget "PocketWatchParentGate" */ = {
+		46EB2E000003B0 /* Build configuration list for PBXNativeTarget "PocketWatchParentGate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E000002E0 /* Debug */,
-				46EB2E000002D0 /* Release */,
+				46EB2E000003D0 /* Debug */,
+				46EB2E000003C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000380 /* Build configuration list for PBXNativeTarget "PocketWatchParentGate-PocketWatchParentGate" */ = {
+		46EB2E000005C0 /* Build configuration list for PBXNativeTarget "ZappCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E000003A0 /* Debug */,
-				46EB2E00000390 /* Release */,
+				46EB2E000005E0 /* Debug */,
+				46EB2E000005D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E000004B0 /* Build configuration list for PBXNativeTarget "ZappCore" */ = {
+		46EB2E00000840 /* Build configuration list for PBXAggregateTarget "ZappPlugins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E000004D0 /* Debug */,
-				46EB2E000004C0 /* Release */,
+				46EB2E00000860 /* Debug */,
+				46EB2E00000850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00000730 /* Build configuration list for PBXAggregateTarget "ZappPlugins" */ = {
+		46EB2E000008C0 /* Build configuration list for PBXNativeTarget "Pods-PocketWatchParentGateExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00000750 /* Debug */,
-				46EB2E00000740 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46EB2E000007B0 /* Build configuration list for PBXNativeTarget "Pods-PocketWatchParentGateExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				46EB2E000007D0 /* Debug */,
-				46EB2E000007C0 /* Release */,
+				46EB2E000008E0 /* Debug */,
+				46EB2E000008D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

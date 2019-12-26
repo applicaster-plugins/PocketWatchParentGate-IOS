@@ -18,7 +18,29 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlW-Hg-aav">
+                                <rect key="frame" x="105.5" y="20" width="164" height="30"/>
+                                <state key="normal" title="EXECUTE ON STARTUP"/>
+                                <connections>
+                                    <action selector="executeOnStartupClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LEz-mu-5Ik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ4-H8-I52">
+                                <rect key="frame" x="99" y="58" width="177" height="30"/>
+                                <state key="normal" title="NOTIFICATION SETTINGS"/>
+                                <connections>
+                                    <action selector="notificationSettingsClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kor-2Q-pcs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KJ4-H8-I52" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7t1-gb-KK0"/>
+                            <constraint firstItem="jlW-Hg-aav" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="8WF-YW-qWc"/>
+                            <constraint firstItem="KJ4-H8-I52" firstAttribute="top" secondItem="jlW-Hg-aav" secondAttribute="bottom" constant="8" id="VEk-hB-Ou2"/>
+                            <constraint firstItem="jlW-Hg-aav" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="snq-V8-2uS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

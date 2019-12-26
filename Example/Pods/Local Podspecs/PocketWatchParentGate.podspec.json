@@ -17,12 +17,8 @@
   },
   "requires_arc": true,
   "frameworks": "UIKit",
-  "source_files": "PocketWatchParentGate/Classes/**/*",
-  "resource_bundles": {
-    "PocketWatchParentGate": [
-      "PocketWatchParentGate/Assets/*.png"
-    ]
-  },
+  "source_files": "PocketWatchParentGate/*",
+  "resources": "PocketWatchParentGate/Assets/*",
   "xcconfig": {
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
     "ENABLE_BITCODE": "YES",
@@ -35,5 +31,21 @@
     "ZappPlugins": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Classes",
+      "source_files": "PocketWatchParentGate/Classes/*",
+      "subspecs": [
+        {
+          "name": "Popups",
+          "source_files": "PocketWatchParentGate/Classes/Popups/*"
+        }
+      ]
+    },
+    {
+      "name": "Extensions",
+      "source_files": "PocketWatchParentGate/Extensions/*"
+    }
+  ]
 }

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Text Field Popup View Controller-->
+        <scene sceneID="O2q-Hu-x9E">
+            <objects>
+                <viewController storyboardIdentifier="TextFieldPopup" id="RwZ-2v-ldj" customClass="TextFieldPopupViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwn-5k-4p7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHM-kD-5Lh">
+                                <rect key="frame" x="36.5" y="144" width="302" height="379"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t miss out…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geE-Fp-Mey">
+                                        <rect key="frame" x="32" y="48" width="246" height="17"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="17"/>
+                                        <color key="textColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get notified when new shows are available from your best video friends. To continue, please answer the following:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7i-nj-mqa">
+                                        <rect key="frame" x="32" y="83" width="238" height="60"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
+                                        <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is eight times seven?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9o-uZ-nwo">
+                                        <rect key="frame" x="32" y="161" width="246" height="15"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45f-dQ-M1o" customClass="FlexibleInsetsTextField" customModule="PocketWatchParentGate" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="194" width="238" height="50"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aTW-bV-Xh3"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-Gi-ONb">
+                                        <rect key="frame" x="156" y="295" width="114" height="49"/>
+                                        <color key="backgroundColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="NcO-e9-bwf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-fO-vrs">
+                                        <rect key="frame" x="32" y="295" width="114" height="49"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.96470588235294119" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="WW1-Xh-sDW"/>
+                                            <constraint firstAttribute="height" constant="49" id="h5v-o2-th1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                        <state key="normal" title="No, thanks">
+                                            <color key="titleColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-fc-0iB">
+                                        <rect key="frame" x="93.5" y="254" width="115" height="15"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
+                                        <color key="textColor" red="1" green="0.12156862745098039" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E1p-fO-vrs" secondAttribute="bottom" constant="35" id="2CF-I7-VEg"/>
+                                    <constraint firstItem="Lxr-fc-0iB" firstAttribute="centerX" secondItem="CHM-kD-5Lh" secondAttribute="centerX" id="3Nv-i9-hKe"/>
+                                    <constraint firstAttribute="trailing" secondItem="geE-Fp-Mey" secondAttribute="trailing" constant="24" id="3nK-k5-C4c"/>
+                                    <constraint firstItem="P7i-nj-mqa" firstAttribute="top" secondItem="geE-Fp-Mey" secondAttribute="bottom" constant="18" id="8J8-xX-xDK"/>
+                                    <constraint firstAttribute="trailing" secondItem="zcm-Gi-ONb" secondAttribute="trailing" constant="32" id="BMa-Ul-mdc"/>
+                                    <constraint firstItem="E1p-fO-vrs" firstAttribute="top" secondItem="Lxr-fc-0iB" secondAttribute="bottom" constant="26" id="Bk3-dK-K8c"/>
+                                    <constraint firstAttribute="trailing" secondItem="45f-dQ-M1o" secondAttribute="trailing" constant="32" id="Cu1-pQ-iYh"/>
+                                    <constraint firstAttribute="trailing" secondItem="U9o-uZ-nwo" secondAttribute="trailing" constant="24" id="HRO-ja-kgy"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7i-nj-mqa" secondAttribute="trailing" constant="32" id="MTk-dq-uEm"/>
+                                    <constraint firstItem="45f-dQ-M1o" firstAttribute="top" secondItem="U9o-uZ-nwo" secondAttribute="bottom" constant="18" id="NsB-sM-WSM"/>
+                                    <constraint firstItem="U9o-uZ-nwo" firstAttribute="leading" secondItem="CHM-kD-5Lh" secondAttribute="leading" constant="32" id="PFW-5F-oOK"/>
+                                    <constraint firstItem="E1p-fO-vrs" firstAttribute="top" secondItem="45f-dQ-M1o" secondAttribute="bottom" constant="51" id="QJM-U1-niI"/>
+                                    <constraint firstItem="E1p-fO-vrs" firstAttribute="width" secondItem="zcm-Gi-ONb" secondAttribute="width" id="Qid-E9-lm4"/>
+                                    <constraint firstItem="P7i-nj-mqa" firstAttribute="leading" secondItem="CHM-kD-5Lh" secondAttribute="leading" constant="32" id="TUr-rE-9fR"/>
+                                    <constraint firstItem="E1p-fO-vrs" firstAttribute="top" secondItem="45f-dQ-M1o" secondAttribute="bottom" constant="51" id="Wor-PE-K78"/>
+                                    <constraint firstItem="U9o-uZ-nwo" firstAttribute="top" secondItem="P7i-nj-mqa" secondAttribute="bottom" constant="18" id="ace-QS-dTm"/>
+                                    <constraint firstItem="Lxr-fc-0iB" firstAttribute="top" secondItem="45f-dQ-M1o" secondAttribute="bottom" constant="10" id="dZ0-18-JAJ"/>
+                                    <constraint firstItem="45f-dQ-M1o" firstAttribute="leading" secondItem="CHM-kD-5Lh" secondAttribute="leading" constant="32" id="dnB-Up-Auf"/>
+                                    <constraint firstItem="zcm-Gi-ONb" firstAttribute="leading" secondItem="E1p-fO-vrs" secondAttribute="trailing" constant="10" id="e0d-JI-LaB"/>
+                                    <constraint firstAttribute="bottom" secondItem="zcm-Gi-ONb" secondAttribute="bottom" constant="35" id="gMK-sH-aLo"/>
+                                    <constraint firstItem="geE-Fp-Mey" firstAttribute="leading" secondItem="CHM-kD-5Lh" secondAttribute="leading" constant="32" id="iNO-0S-IBp"/>
+                                    <constraint firstItem="E1p-fO-vrs" firstAttribute="leading" secondItem="CHM-kD-5Lh" secondAttribute="leading" constant="32" id="qEx-gc-Tvg"/>
+                                    <constraint firstItem="E1p-fO-vrs" firstAttribute="top" secondItem="45f-dQ-M1o" secondAttribute="bottom" constant="31" id="qZP-1Z-NNm"/>
+                                    <constraint firstItem="geE-Fp-Mey" firstAttribute="top" secondItem="CHM-kD-5Lh" secondAttribute="top" constant="48" id="rKV-vV-Ti2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QJM-U1-niI"/>
+                                        <exclude reference="Wor-PE-K78"/>
+                                        <exclude reference="qZP-1Z-NNm"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CHM-kD-5Lh" firstAttribute="centerY" secondItem="gwn-5k-4p7" secondAttribute="centerY" id="0Ot-Z5-SOS"/>
+                            <constraint firstItem="CHM-kD-5Lh" firstAttribute="centerX" secondItem="gwn-5k-4p7" secondAttribute="centerX" id="BvA-ua-4Hw"/>
+                            <constraint firstItem="CHM-kD-5Lh" firstAttribute="width" secondItem="gwn-5k-4p7" secondAttribute="width" multiplier="0.826087" constant="-7.7826086956521863" id="IpU-6G-qiw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ngq-dX-6Gl"/>
+                    </view>
+                    <connections>
+                        <outlet property="bodyView" destination="CHM-kD-5Lh" id="x4n-Dh-40b"/>
+                        <outlet property="descriptionLabel" destination="P7i-nj-mqa" id="kjh-0a-PQU"/>
+                        <outlet property="errorButtonsConstraint" destination="Bk3-dK-K8c" id="bIw-lq-crt"/>
+                        <outlet property="errorLabel" destination="Lxr-fc-0iB" id="w6E-eN-nSK"/>
+                        <outlet property="noButton" destination="E1p-fO-vrs" id="cka-3V-H9I"/>
+                        <outlet property="normalButtonsConstraint" destination="qZP-1Z-NNm" id="BNK-ij-t0z"/>
+                        <outlet property="questionLabel" destination="U9o-uZ-nwo" id="mDE-8W-6fv"/>
+                        <outlet property="submitButton" destination="zcm-Gi-ONb" id="jKD-mU-ApR"/>
+                        <outlet property="textField" destination="45f-dQ-M1o" id="0y4-tz-f2A"/>
+                        <outlet property="titleLabel" destination="geE-Fp-Mey" id="5sD-lg-OwG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiJ-mo-M5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
