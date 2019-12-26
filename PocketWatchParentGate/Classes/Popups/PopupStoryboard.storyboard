@@ -28,28 +28,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHM-kD-5Lh">
-                                <rect key="frame" x="36.5" y="135" width="302" height="397"/>
+                                <rect key="frame" x="36.5" y="144" width="302" height="379"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t miss out…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geE-Fp-Mey">
-                                        <rect key="frame" x="32" y="48" width="246" height="20"/>
+                                        <rect key="frame" x="32" y="48" width="246" height="17"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="17"/>
                                         <color key="textColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get notified when new shows are available from your best video friends. To continue, please answer the following:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7i-nj-mqa">
-                                        <rect key="frame" x="32" y="86" width="238" height="70"/>
+                                        <rect key="frame" x="32" y="83" width="238" height="60"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is eight times seven?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9o-uZ-nwo">
-                                        <rect key="frame" x="32" y="174" width="246" height="17.5"/>
+                                        <rect key="frame" x="32" y="161" width="246" height="15"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45f-dQ-M1o" customClass="FlexibleInsetsTextField" customModule="PocketWatchParentGate" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="209.5" width="238" height="50"/>
+                                        <rect key="frame" x="32" y="194" width="238" height="50"/>
                                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -59,31 +59,29 @@
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-Gi-ONb">
-                                        <rect key="frame" x="156" y="313" width="114" height="49"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-Gi-ONb" customClass="HighlightableButton" customModule="PocketWatchParentGate" customModuleProvider="target">
+                                        <rect key="frame" x="156" y="295" width="114" height="49"/>
                                         <color key="backgroundColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="NcO-e9-bwf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-fO-vrs">
-                                        <rect key="frame" x="32" y="313" width="114" height="49"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-fO-vrs" customClass="HighlightableButton" customModule="PocketWatchParentGate" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="295" width="114" height="49"/>
                                         <color key="backgroundColor" red="0.92156862745098034" green="0.96470588235294119" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="114" id="WW1-Xh-sDW"/>
                                             <constraint firstAttribute="height" constant="49" id="h5v-o2-th1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="No, thanks">
                                             <color key="titleColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-fc-0iB">
-                                        <rect key="frame" x="97.5" y="269.5" width="107" height="17.5"/>
+                                        <rect key="frame" x="93.5" y="254" width="115" height="15"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" red="1" green="0.12156862745098039" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -176,13 +174,12 @@ about new shows?</string>
                                         <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-MP-s4O">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-MP-s4O" customClass="HighlightableButton" customModule="PocketWatchParentGate" customModuleProvider="target">
                                         <rect key="frame" x="32" y="261" width="246" height="61"/>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="UT0-1c-wPT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="Yes, please">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -194,9 +191,8 @@ about new shows?</string>
                                         </constraints>
                                         <state key="normal" title="View Privacy Policy"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-9u-2bn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-9u-2bn">
                                         <rect key="frame" x="32" y="324" width="246" height="61"/>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="No, thanks">
                                             <color key="titleColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -234,6 +230,7 @@ about new shows?</string>
                     </view>
                     <connections>
                         <outlet property="bodyView" destination="Epw-Mp-Q1N" id="sWA-z1-HOM"/>
+                        <outlet property="noButton" destination="m0w-9u-2bn" id="cTA-6n-hA7"/>
                         <outlet property="yesButton" destination="c3e-MP-s4O" id="EDr-wA-98s"/>
                     </connections>
                 </viewController>
@@ -264,20 +261,18 @@ about new shows?</string>
                                         <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puv-Yq-3sc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puv-Yq-3sc" customClass="HighlightableButton" customModule="PocketWatchParentGate" customModuleProvider="target">
                                         <rect key="frame" x="32" y="146" width="246" height="61"/>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="gUp-vm-Jn5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="OK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lS-4I-4EQ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lS-4I-4EQ">
                                         <rect key="frame" x="32" y="209" width="246" height="61"/>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="Enable">
                                             <color key="titleColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -312,6 +307,7 @@ about new shows?</string>
                     </view>
                     <connections>
                         <outlet property="bodyView" destination="Tqb-Zk-lfW" id="Ik4-q6-2rt"/>
+                        <outlet property="enableButton" destination="1lS-4I-4EQ" id="swm-Hd-lx4"/>
                         <outlet property="okButton" destination="puv-Yq-3sc" id="BwW-DS-XgI"/>
                     </connections>
                 </viewController>
@@ -330,25 +326,26 @@ about new shows?</string>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-73-ieA">
                                 <rect key="frame" x="36.5" y="152.5" width="302" height="362"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-6K-FKD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications enabled!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-6K-FKD">
                                         <rect key="frame" x="32" y="168" width="246" height="17"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="17"/>
                                         <color key="textColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to turn off notifications?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-Av-8Zc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-Av-8Zc">
                                         <rect key="frame" x="32" y="203" width="238" height="30"/>
+                                        <string key="text">You can now get on 
+with the fun!</string>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vj-1u-2F0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vj-1u-2F0" customClass="HighlightableButton" customModule="PocketWatchParentGate" customModuleProvider="target">
                                         <rect key="frame" x="32" y="266" width="246" height="61"/>
                                         <color key="backgroundColor" red="0.93725490196078431" green="1" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="10A-Wi-7DX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="OK">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>

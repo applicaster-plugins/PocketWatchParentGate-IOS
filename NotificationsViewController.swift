@@ -10,7 +10,7 @@ import UIKit
 class NotificationsViewController: UIViewController {
 
     @IBOutlet weak var bodyView: UIView!
-    @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var okButton: HighlightableButton!
     @IBOutlet weak var checkMarkImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -26,6 +26,8 @@ extension NotificationsViewController {
         bodyView.layer.cornerRadius = 16
 
         okButton.layer.cornerRadius = 6
+        okButton.defaultColor = okButton.backgroundColor
+        okButton.highlightedColor = UIColor.darkGreen
         
         checkMarkImageView.layer.cornerRadius = checkMarkImageView.frame.size.width / 2
     }

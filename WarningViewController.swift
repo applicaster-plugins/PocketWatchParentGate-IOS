@@ -10,7 +10,8 @@ import UIKit
 class WarningViewController: UIViewController {
 
     @IBOutlet weak var bodyView: UIView!
-    @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var okButton: HighlightableButton!
+    @IBOutlet weak var enableButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +26,9 @@ extension WarningViewController {
         bodyView.layer.cornerRadius = 16
 
         okButton.layer.cornerRadius = 6
+        okButton.defaultColor = okButton.backgroundColor
+        okButton.highlightedColor = UIColor.darkBlue
+        
+        enableButton.setTitleColor(UIColor.darkBlue, for: .highlighted)
     }
 }

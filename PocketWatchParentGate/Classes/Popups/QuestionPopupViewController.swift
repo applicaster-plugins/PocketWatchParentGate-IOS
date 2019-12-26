@@ -14,13 +14,13 @@ class QuestionPopupViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var textField: FlexibleInsetsTextField!
-    @IBOutlet weak var noButton: UIButton!
-    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var noButton: HighlightableButton!
+    @IBOutlet weak var submitButton: HighlightableButton!
     @IBOutlet weak var errorLabel: UILabel!
     
     @IBOutlet weak var normalButtonsConstraint: NSLayoutConstraint!
     @IBOutlet weak var errorButtonsConstraint: NSLayoutConstraint!
-    
+        
     enum State {
         case idle, error
     }
@@ -40,8 +40,13 @@ extension QuestionPopupViewController {
         bodyView.layer.cornerRadius = 16
         
         noButton.layer.cornerRadius = 6
-        submitButton.layer.cornerRadius = 6
+        noButton.defaultColor = noButton.backgroundColor
+        noButton.highlightedColor = UIColor.lightBlue
         
+        submitButton.layer.cornerRadius = 6
+        submitButton.defaultColor = submitButton.backgroundColor
+        submitButton.highlightedColor = UIColor.darkBlue
+                
         textField.layer.cornerRadius = 6
         textField.layer.borderWidth = 1
         textField.layer.borderColor = state == .idle ? UIColor.darkGray.cgColor : UIColor.errorRed.cgColor
