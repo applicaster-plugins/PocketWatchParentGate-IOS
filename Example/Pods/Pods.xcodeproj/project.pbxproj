@@ -29,7 +29,7 @@
 		46EB2E000004A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000350 /* Assets.xcassets */; };
 		46EB2E000004B0 /* FlexibleInsetsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000110 /* FlexibleInsetsTextField.swift */; };
 		46EB2E000004C0 /* ParentGateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000120 /* ParentGateViewController.swift */; };
-		46EB2E000004D0 /* TextFieldPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000150 /* TextFieldPopupViewController.swift */; };
+		46EB2E000004D0 /* QuestionPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000150 /* QuestionPopupViewController.swift */; };
 		46EB2E000004E0 /* PopupStoryboard.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000140 /* PopupStoryboard.storyboard */; };
 		46EB2E000004F0 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000170 /* UIFont.swift */; };
 		46EB2E00000510 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000190 /* UIViewController.swift */; };
@@ -64,6 +64,7 @@
 		46EB2E000009B0 /* Pods-PocketWatchParentGateExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000009A0 /* Pods-PocketWatchParentGateExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46EB2E00000A00 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000009F0 /* Pods-PocketWatchParentGateExample-dummy.m */; };
 		BE09229523B4B5C300C5798C /* UICollor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229423B4B5C300C5798C /* UICollor.swift */; };
+		BE09229723B4C3B800C5798C /* GetNotifiedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +111,7 @@
 		46EB2E00000110 /* FlexibleInsetsTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlexibleInsetsTextField.swift; path = PocketWatchParentGate/Classes/FlexibleInsetsTextField.swift; sourceTree = "<group>"; };
 		46EB2E00000120 /* ParentGateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParentGateViewController.swift; path = PocketWatchParentGate/Classes/ParentGateViewController.swift; sourceTree = "<group>"; };
 		46EB2E00000140 /* PopupStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = PopupStoryboard.storyboard; path = PocketWatchParentGate/Classes/Popups/PopupStoryboard.storyboard; sourceTree = "<group>"; };
-		46EB2E00000150 /* TextFieldPopupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldPopupViewController.swift; path = PocketWatchParentGate/Classes/Popups/TextFieldPopupViewController.swift; sourceTree = "<group>"; };
+		46EB2E00000150 /* QuestionPopupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuestionPopupViewController.swift; path = PocketWatchParentGate/Classes/Popups/QuestionPopupViewController.swift; sourceTree = "<group>"; };
 		46EB2E00000170 /* UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = PocketWatchParentGate/Extensions/UIFont.swift; sourceTree = "<group>"; };
 		46EB2E00000190 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = PocketWatchParentGate/Extensions/UIViewController.swift; sourceTree = "<group>"; };
 		46EB2E000001A0 /* PipesDataModelHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipesDataModelHelper.swift; path = Frameworks/ZappCore/Universal/PipesDataModelHelper/PipesDataModelHelper.swift; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 		81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketWatchParentGateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE09229423B4B5C300C5798C /* UICollor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollor.swift; sourceTree = "<group>"; };
+		BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetNotifiedViewController.swift; path = PocketWatchParentGate/Classes/Popups/GetNotifiedViewController.swift; sourceTree = "<group>"; };
 		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -322,7 +324,8 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E00000140 /* PopupStoryboard.storyboard */,
-				46EB2E00000150 /* TextFieldPopupViewController.swift */,
+				46EB2E00000150 /* QuestionPopupViewController.swift */,
+				BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */,
 			);
 			name = Popups;
 			sourceTree = "<group>";
@@ -585,10 +588,11 @@
 				46EB2E000005A0 /* PocketWatchParentGate-dummy.m in Sources */,
 				46EB2E00000460 /* PocketWatchParentGate.swift in Sources */,
 				46EB2E000004E0 /* PopupStoryboard.storyboard in Sources */,
-				46EB2E000004D0 /* TextFieldPopupViewController.swift in Sources */,
+				46EB2E000004D0 /* QuestionPopupViewController.swift in Sources */,
 				BE09229523B4B5C300C5798C /* UICollor.swift in Sources */,
 				46EB2E000004F0 /* UIFont.swift in Sources */,
 				46EB2E00000510 /* UIViewController.swift in Sources */,
+				BE09229723B4C3B800C5798C /* GetNotifiedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

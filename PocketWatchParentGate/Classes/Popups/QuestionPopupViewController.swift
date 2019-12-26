@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextFieldPopupViewController: UIViewController {
+class QuestionPopupViewController: UIViewController {
     
     @IBOutlet weak var bodyView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -34,7 +34,7 @@ class TextFieldPopupViewController: UIViewController {
     }
 }
 
-extension TextFieldPopupViewController {
+extension QuestionPopupViewController {
     
     private func setupLayout() {
         bodyView.layer.cornerRadius = 16
