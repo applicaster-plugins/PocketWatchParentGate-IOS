@@ -56,7 +56,7 @@ extension ParentGateViewController {
         allConstraints += backgroundHorizontalConstraints
         
         let popupStoryboard = UIStoryboard(name: "PopupStoryboard", bundle: bundle)
-        let popupViewController = popupStoryboard.instantiateViewController(withIdentifier: "NotificationsPopup")
+        let popupViewController = popupStoryboard.instantiateViewController(withIdentifier: "QuestionPopup")
         addChild(viewController: popupViewController)
 
         NSLayoutConstraint.activate(allConstraints)

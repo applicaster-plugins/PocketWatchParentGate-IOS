@@ -20,6 +20,18 @@ class QuestionPopupViewController: UIViewController {
     
     @IBOutlet weak var normalButtonsConstraint: NSLayoutConstraint!
     @IBOutlet weak var errorButtonsConstraint: NSLayoutConstraint!
+    
+    private var tapGesture: UITapGestureRecognizer?
+    
+    private var isTextFieldSelected: Bool = false {
+        didSet {
+            if isTextFieldSelected {
+                textField.layer.borderColor = UIColor.waterBlue.cgColor
+            } else {
+                textField.layer.borderColor = state == .idle ? UIColor.darkGray.cgColor : UIColor.errorRed.cgColor
+            }
+        }
+    }
         
     enum State {
         case idle, error
@@ -49,12 +61,40 @@ extension QuestionPopupViewController {
                 
         textField.layer.cornerRadius = 6
         textField.layer.borderWidth = 1
-        textField.layer.borderColor = state == .idle ? UIColor.darkGray.cgColor : UIColor.errorRed.cgColor
+        isTextFieldSelected = false
         textField.textInset = UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6)
+        textField.delegate = self
         
         errorLabel.isHidden = state == .idle
         
         normalButtonsConstraint.isActive = state == .idle
         errorButtonsConstraint.isActive = state == .error
+    }
+}
+
+extension QuestionPopupViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        isTextFieldSelected = true
+
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap(gesture:)))
+        self.view.addGestureRecognizer(tapGesture)
+        self.tapGesture = tapGesture
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        isTextFieldSelected = false
+        
+        if let tapGesture = tapGesture {
+            self.view.removeGestureRecognizer(tapGesture)
+            self.tapGesture = nil
+        }
+    }
+}
+
+extension QuestionPopupViewController {
+    
+    @objc private func didTap(gesture: UITapGestureRecognizer) {
+        textField.resignFirstResponder()
     }
 }
