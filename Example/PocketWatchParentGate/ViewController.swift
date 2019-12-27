@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func notificationSettingsClicked(_ sender: Any) {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
     }
 }
 

@@ -13,6 +13,12 @@ class NotificationsViewController: UIViewController {
     @IBOutlet weak var okButton: HighlightableButton!
     @IBOutlet weak var checkMarkImageView: UIImageView!
     
+    @IBAction func okButtonAction(_ sender: UIButton) {
+        okCompletion?()
+    }
+    
+    var okCompletion: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

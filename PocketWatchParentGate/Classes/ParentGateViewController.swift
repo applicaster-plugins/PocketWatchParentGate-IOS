@@ -9,6 +9,10 @@ import UIKit
 
 class ParentGateViewController: UIViewController {
     
+    var completion: (() -> Void)?
+    
+    private var popupRouter: PopupRouter?
+    
     private lazy var bundle: Bundle = {
         return Bundle(for: PocketWatchParentGate.self)
     }()
@@ -18,6 +22,7 @@ class ParentGateViewController: UIViewController {
         
         setupFonts()
         setupLayout()
+        setupPopupRouter()
     }
 }
 
@@ -55,10 +60,14 @@ extension ParentGateViewController {
         )
         allConstraints += backgroundHorizontalConstraints
         
-        let popupStoryboard = UIStoryboard(name: "PopupStoryboard", bundle: bundle)
-        let popupViewController = popupStoryboard.instantiateViewController(withIdentifier: "QuestionPopup")
-        addChild(viewController: popupViewController)
-
         NSLayoutConstraint.activate(allConstraints)
+    }
+    
+    private func setupPopupRouter() {
+        popupRouter = PopupRouter(rootViewController: self, bundle: bundle)
+        popupRouter?.present(with: .questions)
+        popupRouter?.completion = { [weak self] in
+            self?.dismiss(animated: true, completion: self?.completion)
+        }
     }
 }

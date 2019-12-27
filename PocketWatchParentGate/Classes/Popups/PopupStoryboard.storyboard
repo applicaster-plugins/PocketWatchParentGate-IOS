@@ -22,7 +22,7 @@
         <!--Question Popup View Controller-->
         <scene sceneID="O2q-Hu-x9E">
             <objects>
-                <viewController storyboardIdentifier="QuestionPopup" id="RwZ-2v-ldj" customClass="QuestionPopupViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questions" id="RwZ-2v-ldj" customClass="QuestionPopupViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gwn-5k-4p7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,9 @@
                                         <state key="normal" title="Submit">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submitButtonAction:" destination="RwZ-2v-ldj" eventType="touchUpInside" id="DzS-RQ-344"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-fO-vrs" customClass="HighlightableButton" customModule="PocketWatchParentGate" customModuleProvider="target">
                                         <rect key="frame" x="32" y="295" width="114" height="49"/>
@@ -79,6 +82,9 @@
                                         <state key="normal" title="No, thanks">
                                             <color key="titleColor" red="0.086274509803921567" green="0.61176470588235299" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="noButtonAction:" destination="RwZ-2v-ldj" eventType="touchUpInside" id="cOL-qW-tEt"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxr-fc-0iB">
                                         <rect key="frame" x="93.5" y="254" width="115" height="15"/>
@@ -151,7 +157,7 @@
         <!--Get Notified View Controller-->
         <scene sceneID="jTV-1K-Gz6">
             <objects>
-                <viewController storyboardIdentifier="GetNotifiedPopup" id="phX-VS-kIF" customClass="GetNotifiedViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getNotified" id="phX-VS-kIF" customClass="GetNotifiedViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sms-kD-Cn4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +189,9 @@ about new shows?</string>
                                         <state key="normal" title="Yes, please">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="yesButtonAction:" destination="phX-VS-kIF" eventType="touchUpInside" id="mmO-yy-7Fw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvp-oc-RAN">
                                         <rect key="frame" x="32" y="183" width="238" height="70"/>
@@ -196,6 +205,9 @@ about new shows?</string>
                                         <state key="normal" title="No, thanks">
                                             <color key="titleColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="noButtonAction:" destination="phX-VS-kIF" eventType="touchUpInside" id="Zwb-p7-bHr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -241,7 +253,7 @@ about new shows?</string>
         <!--Warning View Controller-->
         <scene sceneID="fy1-Yj-ehE">
             <objects>
-                <viewController storyboardIdentifier="WarningPopup" id="tnW-dG-ICa" customClass="WarningViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="warning" id="tnW-dG-ICa" customClass="WarningViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="abb-oz-mXr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,12 +282,18 @@ about new shows?</string>
                                         <state key="normal" title="OK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="okButtonAction:" destination="tnW-dG-ICa" eventType="touchUpInside" id="bje-BX-KIB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lS-4I-4EQ">
                                         <rect key="frame" x="32" y="209" width="246" height="61"/>
                                         <state key="normal" title="Enable">
                                             <color key="titleColor" red="0.086274509799999996" green="0.61176470589999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="enableButtonAction:" destination="tnW-dG-ICa" eventType="touchUpInside" id="k4Y-BZ-czJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -318,7 +336,7 @@ about new shows?</string>
         <!--Notifications View Controller-->
         <scene sceneID="PbA-RK-GpO">
             <objects>
-                <viewController storyboardIdentifier="NotificationsPopup" id="Yei-KN-gBL" customClass="NotificationsViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notifications" id="Yei-KN-gBL" customClass="NotificationsViewController" customModule="PocketWatchParentGate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9hd-NM-nQK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,6 +367,9 @@ with the fun!</string>
                                         <state key="normal" title="OK">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="okButtonAction:" destination="Yei-KN-gBL" eventType="touchUpInside" id="M9L-wr-0fr"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Y6v-3a-evW">
                                         <rect key="frame" x="108.5" y="50" width="85" height="85"/>

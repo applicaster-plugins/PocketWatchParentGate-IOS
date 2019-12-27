@@ -21,6 +21,17 @@ class QuestionPopupViewController: UIViewController {
     @IBOutlet weak var normalButtonsConstraint: NSLayoutConstraint!
     @IBOutlet weak var errorButtonsConstraint: NSLayoutConstraint!
     
+    @IBAction func noButtonAction(_ sender: UIButton) {
+        noCompletion?()
+    }
+    
+    @IBAction func submitButtonAction(_ sender: UIButton) {
+        submitCompletion?(textField.text)
+    }
+    
+    var noCompletion: (() -> Void)?
+    var submitCompletion: ((String?) -> Void)?
+    
     private var tapGesture: UITapGestureRecognizer?
     
     private var isTextFieldSelected: Bool = false {

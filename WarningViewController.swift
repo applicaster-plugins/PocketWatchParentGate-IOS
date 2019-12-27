@@ -13,6 +13,17 @@ class WarningViewController: UIViewController {
     @IBOutlet weak var okButton: HighlightableButton!
     @IBOutlet weak var enableButton: UIButton!
     
+    @IBAction func okButtonAction(_ sender: UIButton) {
+        okCompletion?()
+    }
+    
+    @IBAction func enableButtonAction(_ sender: UIButton) {
+        enableCompletion?()
+    }
+    
+    var okCompletion: (() -> Void)?
+    var enableCompletion: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

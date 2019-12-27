@@ -68,6 +68,7 @@
 		BE09229923B4C96600C5798C /* WarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229823B4C96600C5798C /* WarningViewController.swift */; };
 		BE09229B23B4CFFF00C5798C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229A23B4CFFF00C5798C /* NotificationsViewController.swift */; };
 		BE09229D23B4D9A300C5798C /* HighlightableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229C23B4D9A300C5798C /* HighlightableButton.swift */; };
+		BE09229F23B5DA7500C5798C /* PopupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229E23B5DA7500C5798C /* PopupRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,7 @@
 		BE09229823B4C96600C5798C /* WarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningViewController.swift; sourceTree = "<group>"; };
 		BE09229A23B4CFFF00C5798C /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		BE09229C23B4D9A300C5798C /* HighlightableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightableButton.swift; sourceTree = "<group>"; };
+		BE09229E23B5DA7500C5798C /* PopupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupRouter.swift; sourceTree = "<group>"; };
 		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -333,6 +335,7 @@
 				46EB2E00000140 /* PopupStoryboard.storyboard */,
 				BE09229623B4C3B800C5798C /* GetNotifiedViewController.swift */,
 				BE09229A23B4CFFF00C5798C /* NotificationsViewController.swift */,
+				BE09229E23B5DA7500C5798C /* PopupRouter.swift */,
 				46EB2E00000150 /* QuestionPopupViewController.swift */,
 				BE09229823B4C96600C5798C /* WarningViewController.swift */,
 			);
@@ -605,6 +608,7 @@
 				BE09229923B4C96600C5798C /* WarningViewController.swift in Sources */,
 				46EB2E00000510 /* UIViewController.swift in Sources */,
 				BE09229723B4C3B800C5798C /* GetNotifiedViewController.swift in Sources */,
+				BE09229F23B5DA7500C5798C /* PopupRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,4 +15,10 @@ extension UIViewController {
         view.addSubview(viewController.view)
         viewController.didMove(toParent: self)
     }
+    
+    func removeChild() {
+        willMove(toParent: nil)
+        removeFromParent()
+        view.removeFromSuperview()
+    }
 }

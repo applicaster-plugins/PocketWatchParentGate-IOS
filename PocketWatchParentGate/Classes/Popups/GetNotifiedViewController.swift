@@ -13,6 +13,27 @@ class GetNotifiedViewController: UIViewController {
     @IBOutlet weak var yesButton: HighlightableButton!
     @IBOutlet weak var noButton: UIButton!
     
+    @IBAction func yesButtonAction(_ sender: UIButton) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            DispatchQueue.main.async {
+                if granted {
+                    UIApplication.shared.registerForRemoteNotifications()
+                    self.yesCompletion?()
+                } else {
+                    self.noCompletion?()
+                }
+            }
+        }
+    }
+    
+    @IBAction func noButtonAction(_ sender: UIButton) {
+        noCompletion?()
+    }
+    
+    var yesCompletion: (() -> Void)?
+    var noCompletion: (() -> Void)?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

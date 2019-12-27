@@ -54,15 +54,28 @@ import ZappPlugins
         
         let parentGateViewController = ParentGateViewController()
         parentGateViewController.modalPresentationStyle = .fullScreen
-//        displayViewController?.addChild(parentGateViewController)
-//        parentGateViewController.view.frame = displayViewController?.view.frame ?? .zero
-//        displayViewController?.view.addSubview(parentGateViewController.view)
-//        parentGateViewController.didMove(toParent: displayViewController)
         
-        displayViewController?.present(parentGateViewController, animated: true, completion: nil)
+        if UIApplication.shared.isRegisteredForRemoteNotifications {
+            //Release the hook
+            completion?()
+            return
+        }
         
-        //Release the hook
-        completion?()
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings { settings in
+            DispatchQueue.main.async {
+                if settings.authorizationStatus == .notDetermined {
+                    displayViewController?.present(parentGateViewController, animated: true, completion: nil)
+                    parentGateViewController.completion = {
+                        //Release the hook
+                        completion?()
+                    }
+                } else {
+                    //Release the hook
+                    completion?()
+                }
+            }
+        }
     }
     
     /*
