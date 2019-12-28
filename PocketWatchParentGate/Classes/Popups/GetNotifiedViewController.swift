@@ -13,6 +13,10 @@ class GetNotifiedViewController: UIViewController {
     @IBOutlet weak var yesButton: HighlightableButton!
     @IBOutlet weak var noButton: UIButton!
     
+    @IBAction func viewPrivacyAction(_ sender: UIButton) {
+        viewPrivacyCompletion?()
+    }
+    
     @IBAction func yesButtonAction(_ sender: UIButton) {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -31,6 +35,7 @@ class GetNotifiedViewController: UIViewController {
         noCompletion?()
     }
     
+    var viewPrivacyCompletion: (() -> Void)?
     var yesCompletion: (() -> Void)?
     var noCompletion: (() -> Void)?
 

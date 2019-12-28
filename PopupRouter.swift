@@ -10,7 +10,7 @@ import Foundation
 class PopupRouter {
     
     enum PopupType: String {
-        case questions, getNotified, warning, notifications
+        case questions, getNotified, warning, notifications, privacy
     }
     
     var completion: (() -> Void)?
@@ -54,6 +54,9 @@ class PopupRouter {
             }
         case .getNotified:
             guard let popup = popupViewController as? GetNotifiedViewController else { break }
+            popup.viewPrivacyCompletion = {
+                self.present(modalWith: .privacy)
+            }
             popup.yesCompletion = { [weak popup] in
                 popup?.removeChild()
                 self.present(with: .notifications)
@@ -67,6 +70,18 @@ class PopupRouter {
             popup.okCompletion = {
                 self.completion?()
             }
+        default:
+            break
+        }
+    }
+    
+    func present(modalWith type: PopupType) {
+        switch type {
+        case .privacy:
+            let popupViewController = storyboard.instantiateViewController(withIdentifier: type.rawValue)
+            presentingViewController?.present(popupViewController, animated: true, completion: nil)
+        default:
+            break
         }
     }
 }
