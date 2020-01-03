@@ -432,29 +432,9 @@ with the fun!</string>
                                     <action selector="closeButtonAction:" destination="Xdc-mn-tXy" eventType="touchUpInside" id="Kn9-ac-a1Q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERMS OF SERVICE AND END USER LICENSE AGREEMENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e38-wx-eBL">
-                                <rect key="frame" x="36" y="36" width="303" height="40"/>
-                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXu-3a-VDu" customClass="VerticalAlignLabel" customModule="PocketWatchParentGate" customModuleProvider="target">
-                                <rect key="frame" x="36" y="90" width="303" height="543"/>
-                                <string key="text">Welcome to the pocket.watch mobile application! These Terms of Service and End User License Agreement (“Terms”) are an agreement between you and PocketWatch, Inc. Throughout these Terms, the terms “Company,” “us,” and/or “we” refer to PocketWatch, Inc. These Terms govern your access and use of the pocket.watch mobile application, including all related documentation and updates (the “Application”).</string>
-                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="e38-wx-eBL" secondAttribute="trailing" constant="36" id="7eI-vT-rdY"/>
-                            <constraint firstItem="8Yx-FC-aqb" firstAttribute="bottom" secondItem="YXu-3a-VDu" secondAttribute="bottom" constant="34" id="OUP-aB-QLl"/>
-                            <constraint firstItem="e38-wx-eBL" firstAttribute="leading" secondItem="8Yx-FC-aqb" secondAttribute="leading" constant="36" id="e55-cK-obm"/>
-                            <constraint firstItem="YXu-3a-VDu" firstAttribute="top" secondItem="e38-wx-eBL" secondAttribute="bottom" constant="14" id="fYN-Hb-joz"/>
-                            <constraint firstItem="YXu-3a-VDu" firstAttribute="leading" secondItem="8Yx-FC-aqb" secondAttribute="leading" constant="36" id="fwa-rj-4fs"/>
-                            <constraint firstItem="e38-wx-eBL" firstAttribute="top" secondItem="8Yx-FC-aqb" secondAttribute="top" constant="36" id="j4D-Uh-SGA"/>
-                            <constraint firstItem="8Yx-FC-aqb" firstAttribute="trailing" secondItem="YXu-3a-VDu" secondAttribute="trailing" constant="36" id="pNb-i6-Z3D"/>
                             <constraint firstItem="Kfe-m0-V6K" firstAttribute="top" secondItem="8Yx-FC-aqb" secondAttribute="top" constant="20" id="tgO-L7-PTz"/>
                             <constraint firstItem="8Yx-FC-aqb" firstAttribute="trailing" secondItem="Kfe-m0-V6K" secondAttribute="trailing" constant="16" id="ykv-wM-fSX"/>
                         </constraints>
@@ -462,9 +442,6 @@ with the fun!</string>
                     </view>
                     <connections>
                         <outlet property="closeButton" destination="Kfe-m0-V6K" id="dEQ-es-3Uq"/>
-                        <outlet property="privacyLabel" destination="YXu-3a-VDu" id="0Ux-tD-r3r"/>
-                        <outlet property="titleButton" destination="e38-wx-eBL" id="Ad8-6O-2q0"/>
-                        <outlet property="titleTopToParentConstraint" destination="j4D-Uh-SGA" id="L4B-Yl-Dha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWn-eb-u0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

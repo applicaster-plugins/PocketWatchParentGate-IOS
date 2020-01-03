@@ -6,18 +6,17 @@
 //
 
 import UIKit
+import WebKit
 
 class PrivacyViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var titleButton: UILabel!
-    @IBOutlet weak var privacyLabel: VerticalAlignLabel!
-    
-    @IBOutlet weak var titleTopToParentConstraint: NSLayoutConstraint!
     
     @IBAction func closeButtonAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    private let privacyUrl = "https://pocket.watch/app/terms-of-service"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,26 +28,45 @@ class PrivacyViewController: UIViewController {
 extension PrivacyViewController {
     
     private func setupLayout() {
-        privacyLabel.verticalAlignment = .top
         
+        let webView = WKWebView()
+        webView.load(URLRequest(url: URL(string: privacyUrl)!))
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(webView)
+        
+        let views: [String: Any] = [
+            "closeButton": closeButton!,
+            "webView" : webView
+        ]
+
+        var allConstraints: [NSLayoutConstraint] = []
+
+        let webViewHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-8-[webView]-8-|",
+            metrics: nil,
+            views: views
+        )
+        allConstraints += webViewHorizontalConstraints
+                
         if #available(iOS 13, *) {
             closeButton.isHidden = true
-            titleTopToParentConstraint.isActive = true
-        } else {
-            titleTopToParentConstraint.isActive = false
             
-            let views: [String: Any] = [
-                "closeButton": closeButton!,
-                "titleButton": titleButton!
-            ]
-            
-            NSLayoutConstraint.activate(
-                NSLayoutConstraint.constraints(
-                    withVisualFormat: "V:[closeButton]-(8)-[titleButton]",
-                    metrics: nil,
-                    views: views
-                )
+            let webViewVerticalConstraints = NSLayoutConstraint.constraints(
+                withVisualFormat: "V:|-8-[webView]-8-|",
+                metrics: nil,
+                views: views
             )
+            allConstraints += webViewVerticalConstraints
+
+        } else {
+            let webViewVerticalConstraints = NSLayoutConstraint.constraints(
+                withVisualFormat: "V:[closeButton]-8-[webView]-8-|",
+                metrics: nil,
+                views: views
+            )
+            allConstraints += webViewVerticalConstraints
         }
+        
+        NSLayoutConstraint.activate(allConstraints)
     }
 }
