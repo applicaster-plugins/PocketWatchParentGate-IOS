@@ -9,6 +9,10 @@ import UIKit
 
 class QuestionPopupViewController: UIViewController {
     
+    enum State {
+        case idle, error
+    }
+    
     @IBOutlet weak var bodyView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -26,34 +30,48 @@ class QuestionPopupViewController: UIViewController {
     }
     
     @IBAction func submitButtonAction(_ sender: UIButton) {
-        submitCompletion?(textField.text)
+        if let currentProblemItem = currentProblemItem, currentProblemItem.answer == textField.text {
+            state = .idle
+            submitCompletion?(textField.text)
+        } else {
+            state = .error
+            textField.text = nil
+            setupProblems()
+        }
+        
+        updateTextField()
     }
     
     var noCompletion: (() -> Void)?
     var submitCompletion: ((String?) -> Void)?
     
+    var state: State = .idle {
+        didSet {
+            errorLabel.isHidden = state == .idle
+            
+            normalButtonsConstraint.isActive = state == .idle
+            errorButtonsConstraint.isActive = state == .error
+        }
+    }
+    
     private var tapGesture: UITapGestureRecognizer?
     
     private var isTextFieldSelected: Bool = false {
         didSet {
-            if isTextFieldSelected {
-                textField.layer.borderColor = UIColor.waterBlue.cgColor
-            } else {
-                textField.layer.borderColor = state == .idle ? UIColor.darkGray.cgColor : UIColor.errorRed.cgColor
-            }
+            updateTextField()
         }
     }
-        
-    enum State {
-        case idle, error
-    }
-
-    var state: State = .idle
-        
+    
+    private var problems: [ProblemItem]? = {
+        return Problems().problems
+    }()
+    private var currentProblemItem: ProblemItem?
+                    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupLayout()
+        setupProblems()
     }
 }
 
@@ -76,10 +94,26 @@ extension QuestionPopupViewController {
         textField.textInset = UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6)
         textField.delegate = self
         
-        errorLabel.isHidden = state == .idle
+        state = .idle        
+    }
+    
+    private func setupProblems() {
+        guard var problems = problems, problems.count > 0 else { return }
         
-        normalButtonsConstraint.isActive = state == .idle
-        errorButtonsConstraint.isActive = state == .error
+        let randomIndex = Int.random(in: 0..<problems.count)
+        let problemItem = problems.remove(at: randomIndex)
+        currentProblemItem = problemItem
+        self.problems = problems
+        
+        questionLabel.text = currentProblemItem?.question
+    }
+    
+    private func updateTextField() {
+        if isTextFieldSelected {
+            textField.layer.borderColor = state == .idle ? UIColor.waterBlue.cgColor : UIColor.errorRed.cgColor
+        } else {
+            textField.layer.borderColor = state == .idle ? UIColor.darkGray.cgColor : UIColor.errorRed.cgColor
+        }
     }
 }
 
