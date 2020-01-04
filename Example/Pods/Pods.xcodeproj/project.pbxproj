@@ -70,7 +70,6 @@
 		BE09229D23B4D9A300C5798C /* HighlightableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229C23B4D9A300C5798C /* HighlightableButton.swift */; };
 		BE09229F23B5DA7500C5798C /* PopupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE09229E23B5DA7500C5798C /* PopupRouter.swift */; };
 		BE0922A123B6E1B300C5798C /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0922A023B6E1B300C5798C /* PrivacyViewController.swift */; };
-		BE0922A323B6EEFD00C5798C /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0922A223B6EEFD00C5798C /* VerticalAlignLabel.swift */; };
 		BE0922A523BF264300C5798C /* problems.json in Resources */ = {isa = PBXBuildFile; fileRef = BE0922A423BF264300C5798C /* problems.json */; };
 		BE0922A723BF268200C5798C /* ProblemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0922A623BF268200C5798C /* ProblemItem.swift */; };
 		BE0922A923BF2D7600C5798C /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0922A823BF2D7600C5798C /* Problems.swift */; };
@@ -185,7 +184,6 @@
 		BE09229C23B4D9A300C5798C /* HighlightableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightableButton.swift; sourceTree = "<group>"; };
 		BE09229E23B5DA7500C5798C /* PopupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupRouter.swift; sourceTree = "<group>"; };
 		BE0922A023B6E1B300C5798C /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrivacyViewController.swift; path = PocketWatchParentGate/Classes/Popups/PrivacyViewController.swift; sourceTree = "<group>"; };
-		BE0922A223B6EEFD00C5798C /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
 		BE0922A423BF264300C5798C /* problems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = problems.json; sourceTree = "<group>"; };
 		BE0922A623BF268200C5798C /* ProblemItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemItem.swift; sourceTree = "<group>"; };
 		BE0922A823BF2D7600C5798C /* Problems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problems.swift; sourceTree = "<group>"; };
@@ -336,7 +334,6 @@
 				46EB2E00000120 /* ParentGateViewController.swift */,
 				BE0922A623BF268200C5798C /* ProblemItem.swift */,
 				BE0922A823BF2D7600C5798C /* Problems.swift */,
-				BE0922A223B6EEFD00C5798C /* VerticalAlignLabel.swift */,
 				46EB2E00000130 /* Popups */,
 			);
 			name = Classes;
@@ -621,7 +618,6 @@
 				BE0922A723BF268200C5798C /* ProblemItem.swift in Sources */,
 				46EB2E000004E0 /* PopupStoryboard.storyboard in Sources */,
 				BE0922A923BF2D7600C5798C /* Problems.swift in Sources */,
-				BE0922A323B6EEFD00C5798C /* VerticalAlignLabel.swift in Sources */,
 				46EB2E000004D0 /* QuestionPopupViewController.swift in Sources */,
 				BE09229523B4B5C300C5798C /* UICollor.swift in Sources */,
 				46EB2E000004F0 /* UIFont.swift in Sources */,
