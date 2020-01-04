@@ -2,13 +2,13 @@ ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
 ENABLE_BITCODE = YES
 ENABLE_TESTABILITY = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate" "${PODS_CONFIGURATION_BUILD_DIR}/ZappCore" "${PODS_ROOT}/ZappPlugins/Frameworks/iOS" $(inherited) "${PODS_ROOT}"/**
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate" "${PODS_CONFIGURATION_BUILD_DIR}/UrbanAirship-iOS-SDK" "${PODS_CONFIGURATION_BUILD_DIR}/ZappCore" "${PODS_ROOT}/ZappPlugins/Frameworks/iOS" $(inherited) "${PODS_ROOT}"/**
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ZappCore/ZappCore.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ZappCore/ZappCore.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}"/**
 OTHER_CFLAGS = $(inherited) -fembed-bitcode
-OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "PocketWatchParentGate" -framework "UIKit" -framework "ZappCore" -framework "ZappPlugins"
+OTHER_LDFLAGS = $(inherited) -l"sqlite3" -l"z" -framework "AVFoundation" -framework "AirshipKit" -framework "CFNetwork" -framework "CoreData" -framework "CoreGraphics" -framework "CoreTelephony" -framework "Foundation" -framework "MobileCoreServices" -framework "PocketWatchParentGate" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -framework "UserNotifications" -framework "WebKit" -framework "ZappCore" -framework "ZappPlugins"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -216,12 +216,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PocketWatchParentGateExample/Pods-PocketWatchParentGateExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework",
+				"${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZappCore/ZappCore.framework",
 				"${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketWatchParentGate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AirshipKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZappPlugins.framework",
 			);

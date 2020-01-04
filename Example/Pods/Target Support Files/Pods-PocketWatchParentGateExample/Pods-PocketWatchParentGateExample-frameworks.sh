@@ -162,11 +162,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZappCore/ZappCore.framework"
   install_framework "${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZappCore/ZappCore.framework"
   install_framework "${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework"
 fi

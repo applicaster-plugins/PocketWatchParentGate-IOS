@@ -7,6 +7,7 @@ source 'https://cdn.cocoapods.org/'
 
 def shared_pods
     pod 'ZappPlugins'
+    pod 'UrbanAirship-iOS-SDK'
 end
 
 target 'PocketWatchParentGateExample' do
