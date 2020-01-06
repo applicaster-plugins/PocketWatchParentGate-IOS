@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/applicaster-plugins/PocketWatchParentGate-IOS'
   s.license          = 'MIT'
   s.author           = { 'Andrii Novoselskyi' => 'andrii.novoselskyi@corewillsoft.com' }
-  s.source           = { :git => 'https://github.com/applicaster-plugins/PocketWatchParentGate-IOS', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git', :tag => s.version.to_s }
 
   s.platform            = :ios, '10.0'
   s.requires_arc        = true
@@ -41,9 +41,5 @@ Pod::Spec.new do |s|
   s.subspec 'Extensions' do |ss|
     ss.source_files = 'PocketWatchParentGate/Extensions/*'
   end
-
-  # s.subspec 'Assets' do |ss|
-  #   ss.resources = 'PocketWatchParentGate/Assets/*'
-  # end
 
 end

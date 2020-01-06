@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PocketWatchParentGate: 76f7bb7f370b14cf578fea1dfd86fc4ec6ee1e4a
+  PocketWatchParentGate: 5b20b179ea96571633d30312c05d6969b15619c4
   UrbanAirship-iOS-SDK: bd236d9bc00e3c1c5e1682d8ed780d615a115811
   ZappCore: 25908b99a27d3daace5d5b134ff1f911c4ed1782
   ZappPlugins: 20bdc1011c0da748aa9c00e33f7f13bc8a36990a

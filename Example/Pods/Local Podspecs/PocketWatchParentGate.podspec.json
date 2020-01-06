@@ -9,7 +9,7 @@
     "Andrii Novoselskyi": "andrii.novoselskyi@corewillsoft.com"
   },
   "source": {
-    "git": "https://github.com/applicaster-plugins/PocketWatchParentGate-IOS",
+    "git": "git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git",
     "tag": "0.1.0"
   },
   "platforms": {
