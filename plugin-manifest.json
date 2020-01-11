@@ -4,10 +4,10 @@
     "class_name": "PocketWatchParentGate",
     "modules": [
       "PocketWatchParentGate"
-    ],
+    ]
   },
   "dependency_repository_url": [
-    "url": "git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git"
+    "git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git"
   ],
   "platform": "ios",
   "author_name": "Andrii Novoselskyi",
