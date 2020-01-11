@@ -29,5 +29,11 @@
   "unsupported_since_zapp_sdk": "",
   "react_native": false,
   "custom_configuration_fields": [
+      {
+        "type": "text",
+        "key": "urbanairship_master_key",
+        "tooltip_text": "Urbanairship application master key",
+        "default": ""
+      }
   ]
 }
