@@ -7,9 +7,7 @@
     ],
   },
   "dependency_repository_url": [
-    {
-      "url": "git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git"
-    }
+    "url": "git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git"
   ],
   "platform": "ios",
   "author_name": "Andrii Novoselskyi",
