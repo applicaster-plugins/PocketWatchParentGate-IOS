@@ -7,6 +7,7 @@
 
 import Foundation
 import ZappPlugins
+import AirshipKit
 
 @objc public class PocketWatchParentGate: NSObject, ZPAppLoadingHookProtocol {
     
@@ -72,6 +73,7 @@ import ZappPlugins
                     }
                 } else {
                     //Release the hook
+                    UAirship.push().userPushNotificationsEnabled = settings.authorizationStatus == .authorized
                     completion?()
                 }
             }

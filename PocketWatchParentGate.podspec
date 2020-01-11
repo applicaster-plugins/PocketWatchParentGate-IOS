@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
               }
 
   s.dependency 'ZappPlugins'
+  s.dependency 'UrbanAirship-iOS-SDK'
 
   s.subspec 'Classes' do |ss|
     ss.source_files = 'PocketWatchParentGate/Classes/*'

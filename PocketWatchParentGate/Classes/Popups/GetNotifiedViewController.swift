@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AirshipKit
 
 class GetNotifiedViewController: UIViewController {
 
@@ -23,8 +24,10 @@ class GetNotifiedViewController: UIViewController {
             DispatchQueue.main.async {
                 if granted {
                     UIApplication.shared.registerForRemoteNotifications()
+                    UAirship.push().userPushNotificationsEnabled = true
                     self.yesCompletion?()
                 } else {
+                    UAirship.push().userPushNotificationsEnabled = false
                     self.noCompletion?()
                 }
             }

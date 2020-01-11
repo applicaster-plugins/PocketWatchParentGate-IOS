@@ -1,7 +1,7 @@
 CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate
 ENABLE_BITCODE = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZappCore" "${PODS_ROOT}/ZappPlugins/Frameworks/iOS" $(inherited) "${PODS_ROOT}"/**
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/UrbanAirship-iOS-SDK" "${PODS_CONFIGURATION_BUILD_DIR}/ZappCore" "${PODS_ROOT}/ZappPlugins/Frameworks/iOS" $(inherited) "${PODS_ROOT}"/**
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}"/**
 OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "UIKit" -framework "ZappPlugins"

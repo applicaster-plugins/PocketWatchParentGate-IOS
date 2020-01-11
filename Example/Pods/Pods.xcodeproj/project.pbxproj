@@ -13,7 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
-				46EB2E00005AB0 /* PBXTargetDependency */,
+				46EB2E00005AF0 /* PBXTargetDependency */,
 			);
 			name = ZappPlugins;
 		};
@@ -685,7 +685,8 @@
 		46EB2E00005900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00002AF0 /* Foundation.framework */; };
 		46EB2E00005970 /* Pods-PocketWatchParentGateExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00005960 /* Pods-PocketWatchParentGateExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46EB2E000059C0 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000059B0 /* Pods-PocketWatchParentGateExample-dummy.m */; };
-		46EB2E00005A90 /* AirshipResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6A946EC24D341F676CBAA344C021E58 /* AirshipResources.bundle */; };
+		46EB2E00005AA0 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00005A90 /* AirshipKit.framework */; };
+		46EB2E00005AD0 /* AirshipResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6A946EC24D341F676CBAA344C021E58 /* AirshipResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -728,10 +729,17 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
+			remoteGlobalIDString = 9A733DD59D7B90CBFA5C25FF4546E611;
+			remoteInfo = "UrbanAirship-iOS-SDK";
+		};
+		46EB2E00005AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
 			remoteGlobalIDString = A98A116B4FF67BD640A4C5D2E073323F;
 			remoteInfo = "UrbanAirship-iOS-SDK-AirshipResources";
 		};
-		46EB2E00005AA0 /* PBXContainerItemProxy */ = {
+		46EB2E00005AE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
@@ -1433,6 +1441,7 @@
 		46EB2E00005990 /* Pods-PocketWatchParentGateExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PocketWatchParentGateExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		46EB2E000059A0 /* Pods-PocketWatchParentGateExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketWatchParentGateExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46EB2E000059B0 /* Pods-PocketWatchParentGateExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketWatchParentGateExample-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00005A90 /* AirshipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirshipKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		808FEC876A71EECBB1FD2B8BE025A97F /* AirshipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AirshipKit.framework; path = "UrbanAirship-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketWatchParentGateExample.framework; path = "Pods-PocketWatchParentGateExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZappCore.framework; path = ZappCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1445,6 +1454,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EB2E00005AA0 /* AirshipKit.framework in Frameworks */,
 				46EB2E00002B00 /* Foundation.framework in Frameworks */,
 				46EB2E00005710 /* UIKit.framework in Frameworks */,
 			);
@@ -1522,6 +1532,7 @@
 		46EB2E00000060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46EB2E00005A90 /* AirshipKit.framework */,
 				46EB2E00002AE0 /* iOS */,
 			);
 			name = Frameworks;
@@ -2740,6 +2751,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				46EB2E00005A80 /* PBXTargetDependency */,
 				46EB2E00005A60 /* PBXTargetDependency */,
 			);
 			name = PocketWatchParentGate;
@@ -2781,7 +2793,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00005A80 /* PBXTargetDependency */,
+				46EB2E00005AC0 /* PBXTargetDependency */,
 			);
 			name = "UrbanAirship-iOS-SDK";
 			productName = "UrbanAirship-iOS-SDK";
@@ -2872,7 +2884,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00005A90 /* AirshipResources.bundle in Resources */,
+				46EB2E00005AD0 /* AirshipResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3298,15 +3310,21 @@
 		};
 		46EB2E00005A80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "UrbanAirship-iOS-SDK-AirshipResources";
-			target = A98A116B4FF67BD640A4C5D2E073323F /* UrbanAirship-iOS-SDK-AirshipResources */;
+			name = "UrbanAirship-iOS-SDK";
+			target = 9A733DD59D7B90CBFA5C25FF4546E611 /* UrbanAirship-iOS-SDK */;
 			targetProxy = 46EB2E00005A70 /* PBXContainerItemProxy */;
 		};
-		46EB2E00005AB0 /* PBXTargetDependency */ = {
+		46EB2E00005AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UrbanAirship-iOS-SDK-AirshipResources";
+			target = A98A116B4FF67BD640A4C5D2E073323F /* UrbanAirship-iOS-SDK-AirshipResources */;
+			targetProxy = 46EB2E00005AB0 /* PBXContainerItemProxy */;
+		};
+		46EB2E00005AF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZappCore;
 			target = AC86F9CD63A142C83EDE5E649431993D /* ZappCore */;
-			targetProxy = 46EB2E00005AA0 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00005AE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

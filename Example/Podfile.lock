@@ -2,13 +2,17 @@ PODS:
   - PocketWatchParentGate (0.1.0):
     - PocketWatchParentGate/Classes (= 0.1.0)
     - PocketWatchParentGate/Extensions (= 0.1.0)
+    - UrbanAirship-iOS-SDK
     - ZappPlugins
   - PocketWatchParentGate/Classes (0.1.0):
     - PocketWatchParentGate/Classes/Popups (= 0.1.0)
+    - UrbanAirship-iOS-SDK
     - ZappPlugins
   - PocketWatchParentGate/Classes/Popups (0.1.0):
+    - UrbanAirship-iOS-SDK
     - ZappPlugins
   - PocketWatchParentGate/Extensions (0.1.0):
+    - UrbanAirship-iOS-SDK
     - ZappPlugins
   - UrbanAirship-iOS-SDK (11.1.2)
   - ZappCore (0.1.5)
@@ -32,7 +36,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PocketWatchParentGate: 5b20b179ea96571633d30312c05d6969b15619c4
+  PocketWatchParentGate: 0f7ce41ef3cea6f8ec9216ce8895ab80332c17ec
   UrbanAirship-iOS-SDK: bd236d9bc00e3c1c5e1682d8ed780d615a115811
   ZappCore: 25908b99a27d3daace5d5b134ff1f911c4ed1782
   ZappPlugins: 20bdc1011c0da748aa9c00e33f7f13bc8a36990a
