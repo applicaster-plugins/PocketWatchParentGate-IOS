@@ -73,7 +73,10 @@ import AirshipKit
                     }
                 } else {
                     //Release the hook
-                    UAirship.push().userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                    if let push = UAirship.push() {
+                        push.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                    }
+                    
                     completion?()
                 }
             }
