@@ -30,17 +30,6 @@ Pod::Spec.new do |s|
   s.dependency 'ZappPlugins'
   s.dependency 'UrbanAirship-iOS-SDK'
 
-  s.subspec 'Classes' do |ss|
-    ss.source_files = 'PocketWatchParentGate/Classes/*'
-
-    ss.subspec 'Popups' do |sss|
-      sss.source_files = 'PocketWatchParentGate/Classes/Popups/*'
-    end
-
-  end
-
-  s.subspec 'Extensions' do |ss|
-    ss.source_files = 'PocketWatchParentGate/Extensions/*'
-  end
+  s.source_files = 'PocketWatchParentGate/Sources/**/*'
 
 end

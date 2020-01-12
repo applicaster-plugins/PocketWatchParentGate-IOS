@@ -17,7 +17,7 @@
   },
   "requires_arc": true,
   "frameworks": "UIKit",
-  "source_files": "PocketWatchParentGate/*",
+  "source_files": "PocketWatchParentGate/Sources/**/*",
   "resources": "PocketWatchParentGate/Assets/*",
   "xcconfig": {
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
@@ -34,21 +34,5 @@
     "UrbanAirship-iOS-SDK": [
 
     ]
-  },
-  "subspecs": [
-    {
-      "name": "Classes",
-      "source_files": "PocketWatchParentGate/Classes/*",
-      "subspecs": [
-        {
-          "name": "Popups",
-          "source_files": "PocketWatchParentGate/Classes/Popups/*"
-        }
-      ]
-    },
-    {
-      "name": "Extensions",
-      "source_files": "PocketWatchParentGate/Extensions/*"
-    }
-  ]
+  }
 }
