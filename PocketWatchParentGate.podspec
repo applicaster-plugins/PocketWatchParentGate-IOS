@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.requires_arc        = true
 
   s.frameworks = 'UIKit'
-  s.source_files = 'PocketWatchParentGate/*'
+  s.source_files = 'PocketWatchParentGate/Sources/**/*'
   s.resources = 'PocketWatchParentGate/Assets/*'
   
   # s.resource_bundles = {
@@ -29,7 +29,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'ZappPlugins'
   s.dependency 'UrbanAirship-iOS-SDK'
-
-  s.source_files = 'PocketWatchParentGate/Sources/**/*'
 
 end

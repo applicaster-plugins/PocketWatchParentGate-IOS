@@ -97,10 +97,18 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate/PocketWatchParentGate.bundle"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Metropolis-Bold.otf"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Metropolis-Medium.otf"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Metropolis-Regular.otf"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/problems.json"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Assets.xcassets"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/PocketWatchParentGate/PocketWatchParentGate.bundle"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Metropolis-Bold.otf"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Metropolis-Medium.otf"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Metropolis-Regular.otf"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/problems.json"
+  install_resource "${PODS_ROOT}/../../PocketWatchParentGate/Assets/Assets.xcassets"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
