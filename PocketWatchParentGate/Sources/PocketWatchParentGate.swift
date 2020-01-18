@@ -75,9 +75,7 @@ import AirshipKit
                     }
                 } else {
                     //Release the hook
-                    if let push = UAirship.push() {
-                        push.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
-                    }
+                    UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
                     
                     completion?()
                 }

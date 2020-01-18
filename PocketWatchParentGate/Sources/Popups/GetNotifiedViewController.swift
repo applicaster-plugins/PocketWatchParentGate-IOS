@@ -24,16 +24,12 @@ class GetNotifiedViewController: UIViewController {
             DispatchQueue.main.async {
                 if granted {
                     UIApplication.shared.registerForRemoteNotifications()
-                    if let push = UAirship.push() {
-                        push.userPushNotificationsEnabled = true
-                    }
                     self.yesCompletion?()
                 } else {
-                    if let push = UAirship.push() {
-                        push.userPushNotificationsEnabled = false
-                    }
                     self.noCompletion?()
                 }
+                
+                UAirship.push()?.userPushNotificationsEnabled = granted
             }
         }
     }
