@@ -33,12 +33,21 @@
                                     <action selector="notificationSettingsClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kor-2Q-pcs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-K4-MIL">
+                                <rect key="frame" x="94.5" y="96" width="186" height="30"/>
+                                <state key="normal" title="CONTROL NOTIFICATIONS"/>
+                                <connections>
+                                    <action selector="controlNotificationClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0nO-1l-p2f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1mJ-K4-MIL" firstAttribute="top" secondItem="KJ4-H8-I52" secondAttribute="bottom" constant="8" id="6PA-TZ-oXs"/>
                             <constraint firstItem="KJ4-H8-I52" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7t1-gb-KK0"/>
                             <constraint firstItem="jlW-Hg-aav" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="8WF-YW-qWc"/>
                             <constraint firstItem="KJ4-H8-I52" firstAttribute="top" secondItem="jlW-Hg-aav" secondAttribute="bottom" constant="8" id="VEk-hB-Ou2"/>
+                            <constraint firstItem="1mJ-K4-MIL" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="n8f-7A-5ME"/>
                             <constraint firstItem="jlW-Hg-aav" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="snq-V8-2uS"/>
                         </constraints>
                     </view>

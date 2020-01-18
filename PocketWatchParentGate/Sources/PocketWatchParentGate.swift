@@ -9,10 +9,12 @@ import Foundation
 import ZappPlugins
 import AirshipKit
 
-@objc public class PocketWatchParentGate: NSObject, ZPAppLoadingHookProtocol {
+@objc public class PocketWatchParentGate: NSObject, ZPAppLoadingHookProtocol, ZPPluggableScreenProtocol {
     
     public var configurationJSON: NSDictionary?
     
+    public var screenPluginDelegate: ZPPlugableScreenDelegate?
+        
     public required init(configurationJSON: NSDictionary?) {
         self.configurationJSON = configurationJSON
     }
@@ -101,5 +103,16 @@ import AirshipKit
         
         //Release the hook
         completion?()
+    }
+    
+    // MARK: - ZPPluggableScreenProtocol implementation
+    
+    public required init?(pluginModel: ZPPluginModel, screenModel: ZLScreenModel, dataSourceModel: NSObject?) {
+        super.init()
+    }
+    
+    public func createScreen() -> UIViewController {
+        let storyboard = UIStoryboard(name: "ControlNotificationsStoryboard", bundle: Bundle(for: Self.self))
+        return storyboard.instantiateInitialViewController() ?? UIViewController()
     }
 }

@@ -28,5 +28,12 @@ class ViewController: UIViewController {
     @IBAction func notificationSettingsClicked(_ sender: Any) {
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
     }
+    
+    @IBAction func controlNotificationClicked(_ sender: Any) {
+        pocketWatchParentGate = PocketWatchParentGate(configurationJSON: nil)
+        if let screen = pocketWatchParentGate?.createScreen() {
+            present(screen, animated: true, completion: nil)
+        }
+    }
 }
 
