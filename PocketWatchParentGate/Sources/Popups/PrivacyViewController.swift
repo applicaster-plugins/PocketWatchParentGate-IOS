@@ -30,6 +30,7 @@ extension PrivacyViewController {
     private func setupLayout() {
         
         let webView = WKWebView()
+        webView.backgroundColor = .clear
         webView.load(URLRequest(url: URL(string: privacyUrl)!))
         webView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(webView)

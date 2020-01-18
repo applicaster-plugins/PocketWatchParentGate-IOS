@@ -45,7 +45,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is eight times seven?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9o-uZ-nwo">
                                         <rect key="frame" x="32" y="161" width="246" height="15"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45f-dQ-M1o" customClass="FlexibleInsetsTextField" customModule="PocketWatchParentGate" customModuleProvider="target">
@@ -93,7 +93,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="E1p-fO-vrs" secondAttribute="bottom" constant="35" id="2CF-I7-VEg"/>
                                     <constraint firstItem="Lxr-fc-0iB" firstAttribute="centerX" secondItem="CHM-kD-5Lh" secondAttribute="centerX" id="3Nv-i9-hKe"/>
@@ -209,7 +209,7 @@ about new shows?</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="m0w-9u-2bn" secondAttribute="bottom" constant="17" id="0oH-iQ-hnv"/>
                                     <constraint firstAttribute="trailing" secondItem="m0w-9u-2bn" secondAttribute="trailing" constant="24" id="1DZ-BY-vZB"/>
@@ -295,7 +295,7 @@ about new shows?</string>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="1lS-4I-4EQ" firstAttribute="top" secondItem="puv-Yq-3sc" secondAttribute="bottom" constant="2" id="2Eg-qg-bnv"/>
                                     <constraint firstAttribute="trailing" secondItem="Rqg-77-bGh" secondAttribute="trailing" constant="24" id="Aa7-Rf-owL"/>
@@ -379,7 +379,7 @@ with the fun!</string>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Y6v-3a-evW" firstAttribute="centerX" secondItem="ZhR-73-ieA" secondAttribute="centerX" id="1V7-6a-Zrd"/>
                                     <constraint firstAttribute="bottom" secondItem="7vj-1u-2F0" secondAttribute="bottom" constant="35" id="1eS-J3-1FR"/>
@@ -433,7 +433,7 @@ with the fun!</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Kfe-m0-V6K" firstAttribute="top" secondItem="8Yx-FC-aqb" secondAttribute="top" constant="20" id="tgO-L7-PTz"/>
                             <constraint firstItem="8Yx-FC-aqb" firstAttribute="trailing" secondItem="Kfe-m0-V6K" secondAttribute="trailing" constant="16" id="ykv-wM-fSX"/>
