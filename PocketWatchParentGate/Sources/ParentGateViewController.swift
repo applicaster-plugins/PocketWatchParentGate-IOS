@@ -64,7 +64,7 @@ extension ParentGateViewController {
     }
     
     private func setupPopupRouter() {
-        popupRouter = PopupRouter(rootViewController: self, bundle: bundle)
+        popupRouter = StartupPopupRouter(rootViewController: self, bundle: bundle)
         popupRouter?.present(with: .questions)
         popupRouter?.completion = { [weak self] in
             self?.dismiss(animated: true, completion: self?.completion)

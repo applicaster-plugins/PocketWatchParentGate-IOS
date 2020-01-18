@@ -7,12 +7,8 @@
 
 import Foundation
 
-class PopupRouter {
-    
-    enum PopupType: String {
-        case questions, getNotified, warning, notifications, privacy
-    }
-    
+class StartupPopupRouter: PopupRouter {
+        
     var completion: (() -> Void)?
     
     private weak var presentingViewController: UIViewController?
@@ -23,7 +19,7 @@ class PopupRouter {
         return UIStoryboard(name: "PopupStoryboard", bundle: bundle)
     }()
 
-    init(rootViewController: UIViewController, bundle: Bundle) {
+    required init(rootViewController: UIViewController, bundle: Bundle) {
         presentingViewController = rootViewController
         self.bundle = bundle
     }
