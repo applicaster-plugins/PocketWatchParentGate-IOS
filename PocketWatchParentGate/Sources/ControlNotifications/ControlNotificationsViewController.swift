@@ -24,11 +24,7 @@ class ControlNotificationsViewController: UIViewController {
     
     var completion: (() -> Void)?
     
-    private var popupRouter = NotificationsPopupRouter(bundle: Bundle(for: PocketWatchParentGate.self))
-
-    private lazy var bundle: Bundle = {
-        return Bundle(for: PocketWatchParentGate.self)
-    }()
+    private var popupRouter = NotificationsPopupRouter(bundle: PocketWatchParentGate.bundle)
     
     override func viewDidLoad() {
         super.viewDidLoad()

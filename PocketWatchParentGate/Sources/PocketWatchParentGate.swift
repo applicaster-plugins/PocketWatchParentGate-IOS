@@ -11,6 +11,8 @@ import AirshipKit
 
 @objc public class PocketWatchParentGate: NSObject, ZPAppLoadingHookProtocol, ZPPluggableScreenProtocol {
     
+    public static var bundle = Bundle(for: PocketWatchParentGate.self)
+    
     public var configurationJSON: NSDictionary?
     
     public var screenPluginDelegate: ZPPlugableScreenDelegate?
@@ -55,7 +57,7 @@ import AirshipKit
      */
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
         
-        let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Bundle(for: Self.self)))
+        let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Self.bundle))
         parentGateViewController.modalPresentationStyle = .fullScreen
         
         if UIApplication.shared.isRegisteredForRemoteNotifications {
@@ -110,7 +112,7 @@ import AirshipKit
     }
     
     public func createScreen() -> UIViewController {
-        let storyboard = UIStoryboard(name: "ControlNotificationsStoryboard", bundle: Bundle(for: Self.self))
+        let storyboard = UIStoryboard(name: "ControlNotificationsStoryboard", bundle: Self.bundle)
         return storyboard.instantiateInitialViewController() ?? UIViewController()
     }
 }

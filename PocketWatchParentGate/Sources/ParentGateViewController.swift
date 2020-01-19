@@ -12,11 +12,7 @@ class ParentGateViewController: UIViewController {
     var completion: (() -> Void)?
     
     private(set) var popupRouter: PopupRouter?
-    
-    private lazy var bundle: Bundle = {
-        return Bundle(for: PocketWatchParentGate.self)
-    }()
-    
+        
     init(router: PopupRouter) {
         super.init(nibName: nil, bundle: nil)
 
@@ -39,9 +35,9 @@ class ParentGateViewController: UIViewController {
 extension ParentGateViewController {
     
     private func setupFonts() {
-        UIFont.registerFont(withFilenameString: "Metropolis-Bold.otf", bundle: bundle)
-        UIFont.registerFont(withFilenameString: "Metropolis-Medium.otf", bundle: bundle)
-        UIFont.registerFont(withFilenameString: "Metropolis-Regular.otf", bundle: bundle)
+        UIFont.registerFont(withFilenameString: "Metropolis-Bold.otf", bundle: PocketWatchParentGate.bundle)
+        UIFont.registerFont(withFilenameString: "Metropolis-Medium.otf", bundle: PocketWatchParentGate.bundle)
+        UIFont.registerFont(withFilenameString: "Metropolis-Regular.otf", bundle: PocketWatchParentGate.bundle)
     }
     
     private func setupLayout() {
@@ -49,7 +45,7 @@ extension ParentGateViewController {
                         
         let backgroundImageView = UIImageView()
         backgroundImageView.contentMode = .scaleAspectFill
-        backgroundImageView.image = UIImage(named: "parent_lock_background_image", in: bundle, compatibleWith: nil)
+        backgroundImageView.image = UIImage(named: "parent_lock_background_image", in: PocketWatchParentGate.bundle, compatibleWith: nil)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(backgroundImageView)
 
