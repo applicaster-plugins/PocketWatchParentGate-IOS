@@ -46,6 +46,7 @@ class StartupPopupRouter: PopupRouter {
             guard let popup = popupViewController as? WarningViewController else { break }
             popup.okCompletion = {
                 UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                self.completion?()
             }
             popup.enableCompletion = { [weak popup] in
                 popup?.removeChild()
