@@ -11,12 +11,22 @@ class ParentGateViewController: UIViewController {
     
     var completion: (() -> Void)?
     
-    private var popupRouter: PopupRouter?
+    private(set) var popupRouter: PopupRouter?
     
     private lazy var bundle: Bundle = {
         return Bundle(for: PocketWatchParentGate.self)
     }()
+    
+    init(router: PopupRouter) {
+        super.init(nibName: nil, bundle: nil)
 
+        popupRouter = router
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,8 +74,8 @@ extension ParentGateViewController {
     }
     
     private func setupPopupRouter() {
-        popupRouter = StartupPopupRouter(rootViewController: self, bundle: bundle)
-        popupRouter?.present(with: .questions)
+        popupRouter?.presentingViewController = self
+        popupRouter?.present(with: nil)
         popupRouter?.completion = { [weak self] in
             self?.dismiss(animated: true, completion: self?.completion)
         }

@@ -24,11 +24,8 @@ class GetNotifiedViewController: UIViewController {
             DispatchQueue.main.async {
                 if granted {
                     UIApplication.shared.registerForRemoteNotifications()
-                    self.yesCompletion?()
-                } else {
-                    self.noCompletion?()
                 }
-                
+                self.yesCompletion?(granted)
                 UAirship.push()?.userPushNotificationsEnabled = granted
             }
         }
@@ -39,7 +36,7 @@ class GetNotifiedViewController: UIViewController {
     }
     
     var viewPrivacyCompletion: (() -> Void)?
-    var yesCompletion: (() -> Void)?
+    var yesCompletion: ((Bool) -> Void)?
     var noCompletion: (() -> Void)?
 
     override func viewDidLoad() {

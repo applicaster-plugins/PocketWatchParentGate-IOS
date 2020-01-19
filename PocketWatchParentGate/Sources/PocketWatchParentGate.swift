@@ -55,7 +55,7 @@ import AirshipKit
      */
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
         
-        let parentGateViewController = ParentGateViewController()
+        let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Bundle(for: Self.self)))
         parentGateViewController.modalPresentationStyle = .fullScreen
         
         if UIApplication.shared.isRegisteredForRemoteNotifications {

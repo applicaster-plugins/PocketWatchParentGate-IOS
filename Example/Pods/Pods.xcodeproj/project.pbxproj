@@ -16,6 +16,7 @@
 				46EB2E00005B80 /* PBXTargetDependency */,
 			);
 			name = ZappPlugins;
+			productName = ZappPlugins;
 		};
 /* End PBXAggregateTarget section */
 
@@ -690,6 +691,7 @@
 		46EB2E00005A50 /* Pods-PocketWatchParentGateExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00005A40 /* Pods-PocketWatchParentGateExample-dummy.m */; };
 		46EB2E00005B30 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00005B20 /* AirshipKit.framework */; };
 		46EB2E00005B60 /* AirshipResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6A946EC24D341F676CBAA344C021E58 /* AirshipResources.bundle */; };
+		BE45EBE823D456850082D297 /* NotificationsPopupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE45EBE723D456850082D297 /* NotificationsPopupRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -752,7 +754,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46EB2E000000F0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E000000F0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00000110 /* ControlNotificationsStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ControlNotificationsStoryboard.storyboard; sourceTree = "<group>"; };
 		46EB2E00000120 /* ControlNotificationsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ControlNotificationsViewController.swift; sourceTree = "<group>"; };
 		46EB2E00000140 /* UICollor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollor.swift; sourceTree = "<group>"; };
@@ -1343,10 +1345,10 @@
 		46EB2E00002610 /* FacadeConnectorStorageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacadeConnectorStorageProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/FacadeConnector/Protocols/FacadeConnectorStorageProtocol.swift; sourceTree = "<group>"; };
 		46EB2E00002620 /* UserInterfaceLayerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterfaceLayerProtocol.swift; path = Frameworks/ZappCore/Universal/UserInterfaceLayer/UserInterfaceLayerProtocol/UserInterfaceLayerProtocol.swift; sourceTree = "<group>"; };
 		46EB2E00002640 /* ZappPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZappPlugins.framework; path = Frameworks/iOS/ZappPlugins.framework; sourceTree = "<group>"; };
-		46EB2E00002660 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Metropolis-Bold.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Bold.otf"; sourceTree = "<group>"; };
-		46EB2E00002670 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Metropolis-Medium.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Medium.otf"; sourceTree = "<group>"; };
-		46EB2E00002680 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Metropolis-Regular.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Regular.otf"; sourceTree = "<group>"; };
-		46EB2E00002690 /* problems.json */ = {isa = PBXFileReference; includeInIndex = 1; name = problems.json; path = PocketWatchParentGate/Assets/problems.json; sourceTree = "<group>"; };
+		46EB2E00002660 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Metropolis-Bold.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		46EB2E00002670 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Metropolis-Medium.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		46EB2E00002680 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Metropolis-Regular.otf"; path = "PocketWatchParentGate/Assets/Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		46EB2E00002690 /* problems.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = problems.json; path = PocketWatchParentGate/Assets/problems.json; sourceTree = "<group>"; };
 		46EB2E000026A0 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PocketWatchParentGate/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		46EB2E000026D0 /* UAAutomation 2.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = "UAAutomation 2.xcdatamodel"; sourceTree = "<group>"; };
 		46EB2E000026E0 /* UAAutomation 4.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = "UAAutomation 4.xcdatamodel"; sourceTree = "<group>"; };
@@ -1368,44 +1370,44 @@
 		46EB2E00002800 /* UAMessageCenterListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = UAMessageCenterListViewController.xib; path = AirshipKit/AirshipResources/ios/UAMessageCenterListViewController.xib; sourceTree = "<group>"; };
 		46EB2E00002810 /* UAMessageCenterMessageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = UAMessageCenterMessageViewController.xib; path = AirshipKit/AirshipResources/ios/UAMessageCenterMessageViewController.xib; sourceTree = "<group>"; };
 		46EB2E00002820 /* UAMessageCenterPlaceholderIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UAMessageCenterPlaceholderIcon.png; path = AirshipKit/AirshipResources/ios/UAMessageCenterPlaceholderIcon.png; sourceTree = "<group>"; };
-		46EB2E00002830 /* UANativeBridge */ = {isa = PBXFileReference; includeInIndex = 1; name = UANativeBridge; path = AirshipKit/AirshipResources/ios/UANativeBridge; sourceTree = "<group>"; };
+		46EB2E00002830 /* UANativeBridge */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UANativeBridge; path = AirshipKit/AirshipResources/ios/UANativeBridge; sourceTree = "<group>"; };
 		46EB2E00002840 /* UANotificationCategories.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = UANotificationCategories.plist; path = AirshipKit/AirshipResources/ios/UANotificationCategories.plist; sourceTree = "<group>"; };
 		46EB2E00002850 /* UARateAppPromptView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = UARateAppPromptView.xib; path = AirshipKit/AirshipResources/ios/UARateAppPromptView.xib; sourceTree = "<group>"; };
 		46EB2E00002870 /* UAInbox.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = UAInbox.xcdatamodel; sourceTree = "<group>"; };
-		46EB2E00002880 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = AirshipKit/AirshipResources/common/ar.lproj; sourceTree = "<group>"; };
-		46EB2E00002890 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.lproj; path = AirshipKit/AirshipResources/common/cs.lproj; sourceTree = "<group>"; };
-		46EB2E000028A0 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = AirshipKit/AirshipResources/common/da.lproj; sourceTree = "<group>"; };
-		46EB2E000028B0 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = AirshipKit/AirshipResources/common/de.lproj; sourceTree = "<group>"; };
-		46EB2E000028C0 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = AirshipKit/AirshipResources/common/en.lproj; sourceTree = "<group>"; };
-		46EB2E000028D0 /* es-419.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "es-419.lproj"; path = "AirshipKit/AirshipResources/common/es-419.lproj"; sourceTree = "<group>"; };
-		46EB2E000028E0 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = AirshipKit/AirshipResources/common/es.lproj; sourceTree = "<group>"; };
-		46EB2E000028F0 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fi.lproj; path = AirshipKit/AirshipResources/common/fi.lproj; sourceTree = "<group>"; };
-		46EB2E00002900 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = AirshipKit/AirshipResources/common/fr.lproj; sourceTree = "<group>"; };
-		46EB2E00002910 /* hi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hi.lproj; path = AirshipKit/AirshipResources/common/hi.lproj; sourceTree = "<group>"; };
-		46EB2E00002920 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = AirshipKit/AirshipResources/common/hu.lproj; sourceTree = "<group>"; };
-		46EB2E00002930 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = AirshipKit/AirshipResources/common/id.lproj; sourceTree = "<group>"; };
-		46EB2E00002940 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = AirshipKit/AirshipResources/common/it.lproj; sourceTree = "<group>"; };
-		46EB2E00002950 /* iw.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = iw.lproj; path = AirshipKit/AirshipResources/common/iw.lproj; sourceTree = "<group>"; };
-		46EB2E00002960 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = AirshipKit/AirshipResources/common/ja.lproj; sourceTree = "<group>"; };
-		46EB2E00002970 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = AirshipKit/AirshipResources/common/ko.lproj; sourceTree = "<group>"; };
-		46EB2E00002980 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ms.lproj; path = AirshipKit/AirshipResources/common/ms.lproj; sourceTree = "<group>"; };
-		46EB2E00002990 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = AirshipKit/AirshipResources/common/nl.lproj; sourceTree = "<group>"; };
-		46EB2E000029A0 /* no.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = no.lproj; path = AirshipKit/AirshipResources/common/no.lproj; sourceTree = "<group>"; };
-		46EB2E000029B0 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = AirshipKit/AirshipResources/common/pl.lproj; sourceTree = "<group>"; };
-		46EB2E000029C0 /* pt-PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "pt-PT.lproj"; path = "AirshipKit/AirshipResources/common/pt-PT.lproj"; sourceTree = "<group>"; };
-		46EB2E000029D0 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = AirshipKit/AirshipResources/common/pt.lproj; sourceTree = "<group>"; };
-		46EB2E000029E0 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = AirshipKit/AirshipResources/common/ro.lproj; sourceTree = "<group>"; };
-		46EB2E000029F0 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = AirshipKit/AirshipResources/common/ru.lproj; sourceTree = "<group>"; };
-		46EB2E00002A00 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sk.lproj; path = AirshipKit/AirshipResources/common/sk.lproj; sourceTree = "<group>"; };
-		46EB2E00002A10 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sv.lproj; path = AirshipKit/AirshipResources/common/sv.lproj; sourceTree = "<group>"; };
-		46EB2E00002A20 /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = th.lproj; path = AirshipKit/AirshipResources/common/th.lproj; sourceTree = "<group>"; };
-		46EB2E00002A30 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = AirshipKit/AirshipResources/common/tr.lproj; sourceTree = "<group>"; };
-		46EB2E00002A40 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = AirshipKit/AirshipResources/common/vi.lproj; sourceTree = "<group>"; };
-		46EB2E00002A50 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "AirshipKit/AirshipResources/common/zh-Hans.lproj"; sourceTree = "<group>"; };
-		46EB2E00002A60 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "AirshipKit/AirshipResources/common/zh-Hant.lproj"; sourceTree = "<group>"; };
-		46EB2E00002A80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00002A90 /* PocketWatchParentGate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PocketWatchParentGate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E00002AA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		46EB2E00002880 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ar.lproj; path = AirshipKit/AirshipResources/common/ar.lproj; sourceTree = "<group>"; };
+		46EB2E00002890 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = cs.lproj; path = AirshipKit/AirshipResources/common/cs.lproj; sourceTree = "<group>"; };
+		46EB2E000028A0 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = da.lproj; path = AirshipKit/AirshipResources/common/da.lproj; sourceTree = "<group>"; };
+		46EB2E000028B0 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = AirshipKit/AirshipResources/common/de.lproj; sourceTree = "<group>"; };
+		46EB2E000028C0 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = AirshipKit/AirshipResources/common/en.lproj; sourceTree = "<group>"; };
+		46EB2E000028D0 /* es-419.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "es-419.lproj"; path = "AirshipKit/AirshipResources/common/es-419.lproj"; sourceTree = "<group>"; };
+		46EB2E000028E0 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = AirshipKit/AirshipResources/common/es.lproj; sourceTree = "<group>"; };
+		46EB2E000028F0 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fi.lproj; path = AirshipKit/AirshipResources/common/fi.lproj; sourceTree = "<group>"; };
+		46EB2E00002900 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = AirshipKit/AirshipResources/common/fr.lproj; sourceTree = "<group>"; };
+		46EB2E00002910 /* hi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hi.lproj; path = AirshipKit/AirshipResources/common/hi.lproj; sourceTree = "<group>"; };
+		46EB2E00002920 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hu.lproj; path = AirshipKit/AirshipResources/common/hu.lproj; sourceTree = "<group>"; };
+		46EB2E00002930 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = AirshipKit/AirshipResources/common/id.lproj; sourceTree = "<group>"; };
+		46EB2E00002940 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = AirshipKit/AirshipResources/common/it.lproj; sourceTree = "<group>"; };
+		46EB2E00002950 /* iw.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = iw.lproj; path = AirshipKit/AirshipResources/common/iw.lproj; sourceTree = "<group>"; };
+		46EB2E00002960 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = AirshipKit/AirshipResources/common/ja.lproj; sourceTree = "<group>"; };
+		46EB2E00002970 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = AirshipKit/AirshipResources/common/ko.lproj; sourceTree = "<group>"; };
+		46EB2E00002980 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ms.lproj; path = AirshipKit/AirshipResources/common/ms.lproj; sourceTree = "<group>"; };
+		46EB2E00002990 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = AirshipKit/AirshipResources/common/nl.lproj; sourceTree = "<group>"; };
+		46EB2E000029A0 /* no.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = no.lproj; path = AirshipKit/AirshipResources/common/no.lproj; sourceTree = "<group>"; };
+		46EB2E000029B0 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = AirshipKit/AirshipResources/common/pl.lproj; sourceTree = "<group>"; };
+		46EB2E000029C0 /* pt-PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "pt-PT.lproj"; path = "AirshipKit/AirshipResources/common/pt-PT.lproj"; sourceTree = "<group>"; };
+		46EB2E000029D0 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = AirshipKit/AirshipResources/common/pt.lproj; sourceTree = "<group>"; };
+		46EB2E000029E0 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ro.lproj; path = AirshipKit/AirshipResources/common/ro.lproj; sourceTree = "<group>"; };
+		46EB2E000029F0 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = AirshipKit/AirshipResources/common/ru.lproj; sourceTree = "<group>"; };
+		46EB2E00002A00 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sk.lproj; path = AirshipKit/AirshipResources/common/sk.lproj; sourceTree = "<group>"; };
+		46EB2E00002A10 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sv.lproj; path = AirshipKit/AirshipResources/common/sv.lproj; sourceTree = "<group>"; };
+		46EB2E00002A20 /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = th.lproj; path = AirshipKit/AirshipResources/common/th.lproj; sourceTree = "<group>"; };
+		46EB2E00002A30 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = AirshipKit/AirshipResources/common/tr.lproj; sourceTree = "<group>"; };
+		46EB2E00002A40 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = vi.lproj; path = AirshipKit/AirshipResources/common/vi.lproj; sourceTree = "<group>"; };
+		46EB2E00002A50 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "AirshipKit/AirshipResources/common/zh-Hans.lproj"; sourceTree = "<group>"; };
+		46EB2E00002A60 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "AirshipKit/AirshipResources/common/zh-Hant.lproj"; sourceTree = "<group>"; };
+		46EB2E00002A80 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00002A90 /* PocketWatchParentGate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PocketWatchParentGate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00002AA0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46EB2E00002B50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46EB2E00002D00 /* PocketWatchParentGate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PocketWatchParentGate.xcconfig; sourceTree = "<group>"; };
 		46EB2E00002D10 /* PocketWatchParentGate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PocketWatchParentGate.modulemap; sourceTree = "<group>"; };
@@ -1448,11 +1450,12 @@
 		46EB2E00005A30 /* Pods-PocketWatchParentGateExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PocketWatchParentGateExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46EB2E00005A40 /* Pods-PocketWatchParentGateExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PocketWatchParentGateExample-dummy.m"; sourceTree = "<group>"; };
 		46EB2E00005B20 /* AirshipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirshipKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		808FEC876A71EECBB1FD2B8BE025A97F /* AirshipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AirshipKit.framework; path = "UrbanAirship-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PocketWatchParentGateExample.framework; path = "Pods-PocketWatchParentGateExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZappCore.framework; path = ZappCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6A946EC24D341F676CBAA344C021E58 /* AirshipResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AirshipResources.bundle; path = "UrbanAirship-iOS-SDK-AirshipResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PocketWatchParentGate.framework; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		808FEC876A71EECBB1FD2B8BE025A97F /* AirshipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirshipKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81FDEC02A2607E4D66A8FC89733ECA37 /* Pods_PocketWatchParentGateExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketWatchParentGateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C080E2C5D7B14C7A4018ACD00A6DD7 /* ZappCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZappCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A946EC24D341F676CBAA344C021E58 /* AirshipResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirshipResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE45EBE723D456850082D297 /* NotificationsPopupRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPopupRouter.swift; sourceTree = "<group>"; };
+		F60765357F5710D2B91E617CAA15AADB /* PocketWatchParentGate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketWatchParentGate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2143,7 +2146,6 @@
 				46EB2E000026B0 /* Resources */,
 				46EB2E000031C0 /* Support Files */,
 			);
-			name = "UrbanAirship-iOS-SDK";
 			path = "UrbanAirship-iOS-SDK";
 			sourceTree = "<group>";
 		};
@@ -2173,7 +2175,6 @@
 				46EB2E00002540 /* ZPPluginModel.swift */,
 				46EB2E000056A0 /* Support Files */,
 			);
-			name = ZappCore;
 			path = ZappCore;
 			sourceTree = "<group>";
 		};
@@ -2183,7 +2184,6 @@
 				46EB2E00002630 /* Frameworks */,
 				46EB2E00005770 /* Support Files */,
 			);
-			name = ZappPlugins;
 			path = ZappPlugins;
 			sourceTree = "<group>";
 		};
@@ -2226,10 +2226,10 @@
 		46EB2E000001F0 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				BE45EBE723D456850082D297 /* NotificationsPopupRouter.swift */,
 				46EB2E00000200 /* PopupRouter.swift */,
 				46EB2E00000210 /* StartupPopupRouter.swift */,
 			);
-			name = Routers;
 			path = Routers;
 			sourceTree = "<group>";
 		};
@@ -3010,6 +3010,7 @@
 				46EB2E00002C60 /* FlexibleInsetsTextField.swift in Sources */,
 				46EB2E00002BD0 /* GetNotifiedViewController.swift in Sources */,
 				46EB2E00002C70 /* HighlightableButton.swift in Sources */,
+				BE45EBE823D456850082D297 /* NotificationsPopupRouter.swift in Sources */,
 				46EB2E00002BE0 /* NotificationsViewController.swift in Sources */,
 				46EB2E00002BB0 /* ParentGateViewController.swift in Sources */,
 				46EB2E00002D70 /* PocketWatchParentGate-dummy.m in Sources */,
@@ -3488,8 +3489,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -3917,6 +3917,7 @@
 			children = (
 				46EB2E00002730 /* UAEvents.xcdatamodel */,
 			);
+			currentVersion = 46EB2E00002730 /* UAEvents.xcdatamodel */;
 			name = UAEvents.xcdatamodeld;
 			path = AirshipKit/AirshipResources/common/UAEvents.xcdatamodeld;
 			sourceTree = "<group>";
@@ -3939,6 +3940,7 @@
 			children = (
 				46EB2E00002870 /* UAInbox.xcdatamodel */,
 			);
+			currentVersion = 46EB2E00002870 /* UAInbox.xcdatamodel */;
 			name = UAInbox.xcdatamodeld;
 			path = AirshipKit/AirshipResources/ios/UAInbox.xcdatamodeld;
 			sourceTree = "<group>";

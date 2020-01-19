@@ -15,9 +15,13 @@ protocol PopupRouter {
     
     var completion: (() -> Void)? { get set }
     
-    init(rootViewController: UIViewController, bundle: Bundle)
+    var presentingViewController: UIViewController? { get set }
     
-    func present(with type: PopupType)
+    var initialPopupType: PopupType { get set }
     
-    func present(modalWith type: PopupType)
+    init(rootViewController: UIViewController?, bundle: Bundle)
+    
+    func present(with type: PopupType?)
+    
+    func present(modalWith type: PopupType?)
 }
