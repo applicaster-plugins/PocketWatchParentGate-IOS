@@ -65,22 +65,29 @@ import AirshipKit
             completion?()
             return
         }
-        
-        let center = UNUserNotificationCenter.current()
-        center.getNotificationSettings { settings in
-            DispatchQueue.main.async {
-                if settings.authorizationStatus == .notDetermined {
-                    displayViewController?.present(parentGateViewController, animated: true, completion: nil)
-                    parentGateViewController.completion = {
-                        //Release the hook
-                        completion?()
+                
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            if settings.authorizationStatus == .notDetermined {
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+                    DispatchQueue.main.async {
+                        UAirship.push()?.userPushNotificationsEnabled = granted
+                        if granted {
+                            displayViewController?.present(parentGateViewController, animated: true, completion: nil)
+                            parentGateViewController.completion = {
+                                //Release the hook
+                                completion?()
+                            }
+                        } else {
+                            //Release the hook
+                            completion?()
+                        }
                     }
-                } else {
-                    //Release the hook
-                    UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
-                    
-                    completion?()
                 }
+            } else {
+                //Release the hook
+                UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                
+                completion?()
             }
         }
     }
