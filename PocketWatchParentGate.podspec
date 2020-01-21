@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PocketWatchParentGate'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A PocketWatchParentGate plugin that integrates to Applicaster Zapp based applications'
   s.description      = 'A PocketWatchParentGate plugin that integrates to Applicaster Zapp based applications'
   s.homepage         = 'https://github.com/applicaster-plugins/PocketWatchParentGate-IOS'
