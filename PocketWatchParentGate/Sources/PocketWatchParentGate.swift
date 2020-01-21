@@ -16,6 +16,8 @@ import AirshipKit
     public var configurationJSON: NSDictionary?
     
     public var screenPluginDelegate: ZPPlugableScreenDelegate?
+    
+    private let firsAppLaunchKey = "PocketWatchParentGate.firsAppLaunchKey"
         
     public required init(configurationJSON: NSDictionary?) {
         self.configurationJSON = configurationJSON
@@ -67,27 +69,32 @@ import AirshipKit
         }
                 
         UNUserNotificationCenter.current().getNotificationSettings { settings in
-            if settings.authorizationStatus == .notDetermined {
+            if settings.authorizationStatus == .notDetermined || !UserDefaults.standard.bool(forKey: self.firsAppLaunchKey) {
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-                    DispatchQueue.main.async {
-                        UAirship.push()?.userPushNotificationsEnabled = granted
-                        if granted {
-                            displayViewController?.present(parentGateViewController, animated: true, completion: nil)
-                            parentGateViewController.completion = {
+                    UNUserNotificationCenter.current().getNotificationSettings { settings in
+                        DispatchQueue.main.async {
+                            UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                            if settings.authorizationStatus == .authorized {
+                                displayViewController?.present(parentGateViewController, animated: true, completion: nil)
+                                parentGateViewController.completion = {
+                                    UserDefaults.standard.set(true, forKey: self.firsAppLaunchKey)
+                                    //Release the hook
+                                    completion?()
+                                }
+                            } else {
                                 //Release the hook
                                 completion?()
                             }
-                        } else {
-                            //Release the hook
-                            completion?()
                         }
                     }
                 }
             } else {
-                //Release the hook
-                UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
-                
-                completion?()
+                DispatchQueue.main.async {
+                    //Release the hook
+                    UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                    
+                    completion?()
+                }
             }
         }
     }
