@@ -61,29 +61,25 @@ import AirshipKit
         
         let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Self.bundle))
         parentGateViewController.modalPresentationStyle = .fullScreen
-        
-        if UIApplication.shared.isRegisteredForRemoteNotifications {
-            //Release the hook
-            completion?()
-            return
-        }
-                
+
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             if settings.authorizationStatus == .notDetermined || !UserDefaults.standard.bool(forKey: self.firsAppLaunchKey) {
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-                    UNUserNotificationCenter.current().getNotificationSettings { settings in
-                        DispatchQueue.main.async {
-                            UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
-                            if settings.authorizationStatus == .authorized {
-                                displayViewController?.present(parentGateViewController, animated: true, completion: nil)
-                                parentGateViewController.completion = {
-                                    UserDefaults.standard.set(true, forKey: self.firsAppLaunchKey)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        UNUserNotificationCenter.current().getNotificationSettings { settings in
+                            DispatchQueue.main.async {
+                                UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                                if settings.authorizationStatus == .authorized {
+                                    displayViewController?.present(parentGateViewController, animated: true, completion: nil)
+                                    parentGateViewController.completion = {
+                                        UserDefaults.standard.set(true, forKey: self.firsAppLaunchKey)
+                                        //Release the hook
+                                        completion?()
+                                    }
+                                } else {
                                     //Release the hook
                                     completion?()
                                 }
-                            } else {
-                                //Release the hook
-                                completion?()
                             }
                         }
                     }
@@ -92,7 +88,7 @@ import AirshipKit
                 DispatchQueue.main.async {
                     //Release the hook
                     UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
-                    
+
                     completion?()
                 }
             }
