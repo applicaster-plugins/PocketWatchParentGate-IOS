@@ -20,9 +20,14 @@ class ViewController: UIViewController {
 
     @IBAction func executeOnStartupClicked(_ sender: Any) {
         pocketWatchParentGate = PocketWatchParentGate(configurationJSON: nil)
-        pocketWatchParentGate?.executeOnApplicationReady(displayViewController: self, completion: { [weak self] in
-            self?.pocketWatchParentGate = nil
-        })
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.pocketWatchParentGate?.executeOnApplicationReady(displayViewController: self, completion: { [weak self] in
+                self?.pocketWatchParentGate = nil
+            })
+        }
     }
     
     @IBAction func notificationSettingsClicked(_ sender: Any) {
