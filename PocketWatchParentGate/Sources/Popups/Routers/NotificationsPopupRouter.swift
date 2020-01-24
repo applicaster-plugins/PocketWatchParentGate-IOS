@@ -47,8 +47,10 @@ class NotificationsPopupRouter: PopupRouter {
         case .warning:
             guard let popup = popupViewController as? WarningViewController else { break }
             popup.okCompletion = {
-                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-                self.completion?()
+                self.presentAlert(title: nil, message: PopupRouterConstants.disableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                    self.completion?()
+                }
             }
             popup.enableCompletion = {
                 self.notificationsEnabled = true
@@ -67,8 +69,10 @@ class NotificationsPopupRouter: PopupRouter {
                             popup?.removeChild()
                             self.present(with: .notifications)
                         } else {
-                            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-                            self.completion?()
+                            self.presentAlert(title: nil, message: PopupRouterConstants.enableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
+                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                                self.completion?()
+                            }
                         }
                     }
                 }
