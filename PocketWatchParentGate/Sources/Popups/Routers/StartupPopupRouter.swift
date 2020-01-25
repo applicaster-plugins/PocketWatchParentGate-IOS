@@ -29,17 +29,17 @@ class StartupPopupRouter: PopupRouter {
     func present(with type: PopupType?) {
         let type = type ?? initialPopupType
         let popupViewController = storyboard.instantiateViewController(withIdentifier: type.rawValue)
-        presentingViewController?.addChild(viewController: popupViewController)
+        presentingViewController?.addChild(viewController: popupViewController, animated: true)
         
         switch type {
         case .questions:
             guard let popup = popupViewController as? QuestionPopupViewController else { break }
             popup.noCompletion = { [weak popup] in
-                popup?.removeChild()
+                popup?.removeChild(animated: true)
                 self.present(with: .warning)
             }
             popup.submitCompletion = { [weak popup] result in
-                popup?.removeChild()
+                popup?.removeChild(animated: true)
                 self.present(with: .getNotified)
             }
         case .warning:
@@ -51,7 +51,7 @@ class StartupPopupRouter: PopupRouter {
                 }
             }
             popup.enableCompletion = { [weak popup] in
-                popup?.removeChild()
+                popup?.removeChild(animated: true)
                 self.present(with: .questions)
             }
         case .getNotified:
@@ -61,14 +61,14 @@ class StartupPopupRouter: PopupRouter {
             }
             popup.yesCompletion = { [weak popup] granted in
                 if granted {
-                    popup?.removeChild()
+                    popup?.removeChild(animated: true)
                     self.present(with: .notifications)
                 } else {
                     popup?.noCompletion?()
                 }
             }
             popup.noCompletion = { [weak popup] in
-                popup?.removeChild()
+                popup?.removeChild(animated: true)
                 self.present(with: .warning)
             }
         case .notifications:

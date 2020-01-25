@@ -31,7 +31,7 @@ class NotificationsPopupRouter: PopupRouter {
     func present(with type: PopupType?) {
         let type = type ?? (notificationsEnabled ? .questions : .warning)
         let popupViewController = storyboard.instantiateViewController(withIdentifier: type.rawValue)
-        presentingViewController?.addChild(viewController: popupViewController)
+        presentingViewController?.addChild(viewController: popupViewController, animated: true)
         
         switch type {
         case .questions:
@@ -41,7 +41,7 @@ class NotificationsPopupRouter: PopupRouter {
                 self.completion?()
             }
             popup.submitCompletion = { [weak popup] result in
-                popup?.removeChild()
+                popup?.removeChild(animated: true)
                 self.present(with: .getNotified)
             }
         case .warning:
@@ -66,7 +66,7 @@ class NotificationsPopupRouter: PopupRouter {
                 center.getNotificationSettings { settings in
                     DispatchQueue.main.async {
                         if settings.authorizationStatus == .notDetermined {
-                            popup?.removeChild()
+                            popup?.removeChild(animated: true)
                             self.present(with: .notifications)
                         } else {
                             self.presentAlert(title: nil, message: PopupRouterConstants.enableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
