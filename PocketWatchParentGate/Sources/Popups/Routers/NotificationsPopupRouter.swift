@@ -23,9 +23,9 @@ class NotificationsPopupRouter: PopupRouter {
         return UIStoryboard(name: "PopupStoryboard", bundle: bundle)
     }()
     
-    required init(rootViewController: UIViewController? = nil, bundle: Bundle) {
+    required init(rootViewController: UIViewController? = nil, bundle: Bundle? = nil) {
         presentingViewController = rootViewController
-        self.bundle = bundle
+        self.bundle = bundle ?? Bundle.main
     }
     
     func present(with type: PopupType?) {

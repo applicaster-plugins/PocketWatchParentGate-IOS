@@ -35,9 +35,10 @@ class ParentGateViewController: UIViewController {
 extension ParentGateViewController {
     
     private func setupFonts() {
-        UIFont.registerFont(withFilenameString: "Metropolis-Bold.otf", bundle: PocketWatchParentGate.bundle)
-        UIFont.registerFont(withFilenameString: "Metropolis-Medium.otf", bundle: PocketWatchParentGate.bundle)
-        UIFont.registerFont(withFilenameString: "Metropolis-Regular.otf", bundle: PocketWatchParentGate.bundle)
+        guard let bundle = PocketWatchParentGate.bundle else { return }
+        UIFont.registerFont(withFilenameString: "Metropolis-Bold.otf", bundle: bundle)
+        UIFont.registerFont(withFilenameString: "Metropolis-Medium.otf", bundle: bundle)
+        UIFont.registerFont(withFilenameString: "Metropolis-Regular.otf", bundle: bundle)
     }
     
     private func setupLayout() {

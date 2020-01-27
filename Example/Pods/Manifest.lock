@@ -1,34 +1,85 @@
 PODS:
-  - PocketWatchParentGate (0.1.0):
-    - UrbanAirship-iOS-SDK
+  - FirebaseCore (6.6.0):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.2.0):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 1.3)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 0.3.901)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - FirebaseInstallations (1.1.0):
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (4.3.0):
+    - FirebaseCore (~> 6.6)
+    - FirebaseInstallations (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/UserDefaults (~> 6.5)
+  - GoogleDataTransport (3.3.0)
+  - GoogleDataTransportCCTSupport (1.3.0):
+    - GoogleDataTransport (~> 3.3)
+    - nanopb (~> 0.3.901)
+  - GoogleUtilities/Environment (6.5.0)
+  - GoogleUtilities/Logger (6.5.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/UserDefaults (6.5.0):
+    - GoogleUtilities/Logger
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - PocketWatchParentGate (0.1.3):
+    - FirebaseInstanceID
     - ZappPlugins
-  - UrbanAirship-iOS-SDK (11.1.2)
-  - ZappCore (0.1.5)
-  - ZappPlugins (11.1.8):
+  - PromisesObjC (1.2.8)
+  - ZappCore (0.5.0)
+  - ZappPlugins (11.3.0):
     - ZappCore
 
 DEPENDENCIES:
   - PocketWatchParentGate (from `../`)
-  - UrbanAirship-iOS-SDK
-  - ZappPlugins
 
 SPEC REPOS:
   "git@github.com:applicaster/CocoaPods.git":
     - ZappCore
     - ZappPlugins
   trunk:
-    - UrbanAirship-iOS-SDK
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - nanopb
+    - PromisesObjC
 
 EXTERNAL SOURCES:
   PocketWatchParentGate:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PocketWatchParentGate: 910afdea397e4a2457130ad1ea57bafe97ae9fbd
-  UrbanAirship-iOS-SDK: bd236d9bc00e3c1c5e1682d8ed780d615a115811
-  ZappCore: 25908b99a27d3daace5d5b134ff1f911c4ed1782
-  ZappPlugins: 20bdc1011c0da748aa9c00e33f7f13bc8a36990a
+  FirebaseCore: 4aeb81ff53dcd9a3634ca725dc1fb8c2a4622046
+  FirebaseCoreDiagnostics: 5e78803ab276bc5b50340e3c539c06c3de35c649
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  FirebaseInstallations: 575cd32f2aec0feeb0e44f5d0110a09e5e60b47b
+  FirebaseInstanceID: 6668efc1655a4052c083f287a7141f1ead12f9c2
+  GoogleDataTransport: 574a983e829327d7c18f2627f65d9e80164ea8a4
+  GoogleDataTransportCCTSupport: cad3cd6cdbdbad6b5c2c9206ec413402755faaaa
+  GoogleUtilities: f8de7ddf8c706f58e9b405d53e38bbdaa2731e5a
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PocketWatchParentGate: ef82e5405d2e5d7354eca6249acf23bc3b2aa5c4
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  ZappCore: f92ff80112b8dfac6ebba117b393df0665e93241
+  ZappPlugins: 3a6592c577790586d519b021dcc143bab15bf49c
 
-PODFILE CHECKSUM: a395dfcce496bb99f20860256988f283287fad2c
+PODFILE CHECKSUM: e6f7311eea5dcc3193c82a93cb6b04e5da0a16eb
 
 COCOAPODS: 1.8.4

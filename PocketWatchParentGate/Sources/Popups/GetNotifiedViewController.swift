@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AirshipKit
 
 class GetNotifiedViewController: UIViewController {
 
@@ -26,7 +25,7 @@ class GetNotifiedViewController: UIViewController {
                     UIApplication.shared.registerForRemoteNotifications()
                 }
                 self.yesCompletion?(granted)
-                UAirship.push()?.userPushNotificationsEnabled = granted
+                granted ? PocketWatchParentGate.pushService.subscribePush() : PocketWatchParentGate.pushService.unsubscribePush()
             }
         }
     }

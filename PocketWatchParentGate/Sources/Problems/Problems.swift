@@ -12,7 +12,7 @@ struct Problems {
     var problems: [ProblemItem]?
         
     init() {
-        if let url = PocketWatchParentGate.bundle.url(forResource: "problems", withExtension: "json"), let jsonData = try? Data(contentsOf: url) {
+        if let url = PocketWatchParentGate.bundle?.url(forResource: "problems", withExtension: "json"), let jsonData = try? Data(contentsOf: url) {
             let jsonDecoder = JSONDecoder()
             do {
                 problems = try jsonDecoder.decode([ProblemItem].self, from: jsonData)
