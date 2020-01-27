@@ -9,16 +9,37 @@ import Foundation
 
 extension UIViewController {
     
-    func addChild(viewController: UIViewController) {
+    func addChild(viewController: UIViewController, animated: Bool = false) {
         addChild(viewController)
         viewController.view.frame = view.frame
         view.addSubview(viewController.view)
-        viewController.didMove(toParent: self)
+
+        if animated {
+            viewController.view.alpha = 0
+            UIView.animate(withDuration: 0.25, animations: {
+                viewController.view.alpha = 1
+            }) { finished in
+                viewController.didMove(toParent: self)
+            }
+        } else {
+            viewController.didMove(toParent: self)
+        }
     }
     
-    func removeChild() {
+    func removeChild(animated: Bool = false) {
         willMove(toParent: nil)
-        removeFromParent()
-        view.removeFromSuperview()
-    }
+        if animated {
+            UIView.animate(withDuration: 0.25, animations: {
+                self.view.alpha = 0
+            }) { finished in
+                self.removeFromParent()
+                self.view.removeFromSuperview()
+                self.didMove(toParent: nil)
+            }
+        } else {
+            removeFromParent()
+            view.removeFromSuperview()
+            didMove(toParent: nil)
+        }
+    }        
 }

@@ -31,7 +31,7 @@ class NotificationsPopupRouter: PopupRouter {
     func present(with type: PopupType?) {
         let type = type ?? (notificationsEnabled ? .questions : .warning)
         let popupViewController = storyboard.instantiateViewController(withIdentifier: type.rawValue)
-        presentingViewController?.addChild(viewController: popupViewController)
+        presentingViewController?.addChild(viewController: popupViewController, animated: true)
         
         switch type {
         case .questions:
@@ -41,14 +41,16 @@ class NotificationsPopupRouter: PopupRouter {
                 self.completion?()
             }
             popup.submitCompletion = { [weak popup] result in
-                popup?.removeChild()
+                popup?.removeChild(animated: true)
                 self.present(with: .getNotified)
             }
         case .warning:
             guard let popup = popupViewController as? WarningViewController else { break }
             popup.okCompletion = {
-                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-                self.completion?()
+                self.presentAlert(title: nil, message: PopupRouterConstants.disableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                    self.completion?()
+                }
             }
             popup.enableCompletion = {
                 self.notificationsEnabled = true
@@ -64,11 +66,13 @@ class NotificationsPopupRouter: PopupRouter {
                 center.getNotificationSettings { settings in
                     DispatchQueue.main.async {
                         if settings.authorizationStatus == .notDetermined {
-                            popup?.removeChild()
+                            popup?.removeChild(animated: true)
                             self.present(with: .notifications)
                         } else {
-                            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-                            self.completion?()
+                            self.presentAlert(title: nil, message: PopupRouterConstants.enableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
+                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                                self.completion?()
+                            }
                         }
                     }
                 }

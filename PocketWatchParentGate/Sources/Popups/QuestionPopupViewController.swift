@@ -54,6 +54,10 @@ class QuestionPopupViewController: UIViewController {
         }
     }
     
+    private let defaultOffset: CGFloat = 8.0
+    
+    private var bodyViewTransform: CGAffineTransform = .identity
+    
     private var tapGesture: UITapGestureRecognizer?
     
     private var isTextFieldSelected: Bool = false {
@@ -120,6 +124,8 @@ extension QuestionPopupViewController {
 extension QuestionPopupViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        subscribeKeyboardNotifications()
+        
         isTextFieldSelected = true
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTap(gesture:)))
@@ -128,6 +134,8 @@ extension QuestionPopupViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        unsubscribeKeyboardNotifications()
+        
         isTextFieldSelected = false
         
         if let tapGesture = tapGesture {
@@ -141,5 +149,38 @@ extension QuestionPopupViewController {
     
     @objc private func didTap(gesture: UITapGestureRecognizer) {
         textField.resignFirstResponder()
+    }
+}
+
+extension QuestionPopupViewController {
+    
+    private func subscribeKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    private func unsubscribeKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: Notification) {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        guard let keyboardFrameValue: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        let keyboardFrame = keyboardFrameValue.cgRectValue
+        
+        if bodyView.frame.intersects(keyboardFrame) {
+            let intersection = bodyView.frame.intersection(keyboardFrame)
+            let offset = -intersection.size.height - defaultOffset
+            bodyViewTransform = CGAffineTransform(translationX: 0, y: offset)
+            bodyView.transform = bodyView.transform.concatenating(bodyViewTransform)
+        }
+    }
+    
+    @objc private func keyboardWillHide(notification: Notification) {
+        if bodyViewTransform != .identity {
+            bodyView.transform = bodyView.transform.concatenating(bodyViewTransform.inverted())
+            bodyViewTransform = .identity
+        }
     }
 }
