@@ -161,16 +161,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZappCore/ZappCore.framework"
   install_framework "${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/PocketWatchParentGate/PocketWatchParentGate.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/UrbanAirship-iOS-SDK/AirshipKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZappCore/ZappCore.framework"
   install_framework "${PODS_ROOT}/ZappPlugins/Frameworks/iOS/ZappPlugins.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

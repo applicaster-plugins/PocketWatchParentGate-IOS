@@ -7,15 +7,21 @@
 
 import Foundation
 import ZappPlugins
-import AirshipKit
 
 @objc public class PocketWatchParentGate: NSObject, ZPAppLoadingHookProtocol, ZPPluggableScreenProtocol {
     
-    public static var bundle = Bundle(for: PocketWatchParentGate.self)
+    public static var bundle: Bundle? = {
+        if let path = Bundle.main.path(forResource: "PocketWatchParentGate", ofType: "bundle") {
+            return Bundle(path: path)
+        }
+        return nil
+    }()
     
     public var configurationJSON: NSDictionary?
     
     public var screenPluginDelegate: ZPPlugableScreenDelegate?
+    
+    static var pushService: PushService = FirebasePushService()
     
     private let firsAppLaunchKey = "PocketWatchParentGate.firsAppLaunchKey"
         
@@ -68,7 +74,7 @@ import AirshipKit
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         UNUserNotificationCenter.current().getNotificationSettings { settings in
                             DispatchQueue.main.async {
-                                UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                                settings.authorizationStatus == .authorized ? Self.pushService.subscribePush() : Self.pushService.unsubscribePush()
                                 if settings.authorizationStatus == .authorized {
                                     displayViewController?.present(parentGateViewController, animated: true, completion: nil)
                                     parentGateViewController.completion = {
@@ -87,7 +93,7 @@ import AirshipKit
             } else {
                 DispatchQueue.main.async {
                     //Release the hook
-                    UAirship.push()?.userPushNotificationsEnabled = settings.authorizationStatus == .authorized
+                    settings.authorizationStatus == .authorized ? Self.pushService.subscribePush() : Self.pushService.unsubscribePush()
 
                     completion?()
                 }

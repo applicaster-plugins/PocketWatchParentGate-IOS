@@ -25,7 +25,7 @@ protocol PopupRouter {
     
     var initialPopupType: PopupType { get set }
     
-    init(rootViewController: UIViewController?, bundle: Bundle)
+    init(rootViewController: UIViewController?, bundle: Bundle?)
     
     func present(with type: PopupType?)
     
