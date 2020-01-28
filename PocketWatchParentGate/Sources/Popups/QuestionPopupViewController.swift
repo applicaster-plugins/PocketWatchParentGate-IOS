@@ -97,6 +97,7 @@ extension QuestionPopupViewController {
         isTextFieldSelected = false
         textField.textInset = UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6)
         textField.delegate = self
+        textField.keyboardType = .numberPad
         
         state = .idle        
     }
