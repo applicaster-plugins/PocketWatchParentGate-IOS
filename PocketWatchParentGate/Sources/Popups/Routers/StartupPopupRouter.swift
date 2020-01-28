@@ -20,6 +20,8 @@ class StartupPopupRouter: PopupRouter {
     private lazy var storyboard: UIStoryboard = {
         return UIStoryboard(name: "PopupStoryboard", bundle: bundle)
     }()
+    
+    private var previousPopupType: PopupType?
 
     required init(rootViewController: UIViewController? = nil, bundle: Bundle? = nil) {
         presentingViewController = rootViewController
@@ -37,10 +39,12 @@ class StartupPopupRouter: PopupRouter {
             popup.noCompletion = { [weak popup] in
                 popup?.removeChild(animated: true)
                 self.present(with: .warning)
+                self.previousPopupType = type
             }
             popup.submitCompletion = { [weak popup] result in
                 popup?.removeChild(animated: true)
                 self.present(with: .getNotified)
+                self.previousPopupType = type
             }
         case .warning:
             guard let popup = popupViewController as? WarningViewController else { break }
@@ -49,15 +53,22 @@ class StartupPopupRouter: PopupRouter {
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
                     self.completion?()
                 }
+                self.previousPopupType = type
             }
             popup.enableCompletion = { [weak popup] in
                 popup?.removeChild(animated: true)
-                self.present(with: .questions)
+                if let previousPopupType = self.previousPopupType {
+                    self.present(with: previousPopupType)
+                } else {
+                    self.completion?()
+                }
+                self.previousPopupType = type
             }
         case .getNotified:
             guard let popup = popupViewController as? GetNotifiedViewController else { break }
             popup.viewPrivacyCompletion = {
                 self.present(modalWith: .privacy)
+                self.previousPopupType = type
             }
             popup.yesCompletion = { [weak popup] granted in
                 if granted {
@@ -66,15 +77,18 @@ class StartupPopupRouter: PopupRouter {
                 } else {
                     popup?.noCompletion?()
                 }
+                self.previousPopupType = type
             }
             popup.noCompletion = { [weak popup] in
                 popup?.removeChild(animated: true)
                 self.present(with: .warning)
+                self.previousPopupType = type
             }
         case .notifications:
             guard let popup = popupViewController as? NotificationsViewController else { break }
             popup.okCompletion = {
                 self.completion?()
+                self.previousPopupType = type
             }
         default:
             break
