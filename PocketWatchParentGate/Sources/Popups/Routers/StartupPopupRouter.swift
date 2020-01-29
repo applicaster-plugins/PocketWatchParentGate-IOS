@@ -29,6 +29,12 @@ class StartupPopupRouter: PopupRouter {
         presentingViewController = rootViewController
         self.bundle = bundle ?? Bundle.main
         configurationJSON = configuration
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActive(notification:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     func present(with type: PopupType?) {
@@ -54,7 +60,6 @@ class StartupPopupRouter: PopupRouter {
             popup.okCompletion = {
                 self.presentAlert(title: nil, message: PopupRouterConstants.disableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
-                    self.completion?()
                 }
                 self.previousPopupType = type
             }
@@ -109,6 +114,20 @@ class StartupPopupRouter: PopupRouter {
             presentingViewController?.present(popupViewController, animated: true, completion: nil)
         default:
             break
+        }
+    }
+}
+
+extension StartupPopupRouter {
+    
+    @objc private func didBecomeActive(notification: Notification) {
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings { settings in
+            DispatchQueue.main.async {
+                if settings.authorizationStatus != .authorized {
+                    self.completion?()
+                }
+            }
         }
     }
 }
