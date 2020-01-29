@@ -9,6 +9,8 @@ import Foundation
 
 class NotificationsPopupRouter: PopupRouter {
     
+    var configurationJSON: NSDictionary?
+    
     var notificationsEnabled = false
     
     var completion: (() -> Void)?
@@ -23,9 +25,10 @@ class NotificationsPopupRouter: PopupRouter {
         return UIStoryboard(name: "PopupStoryboard", bundle: bundle)
     }()
     
-    required init(rootViewController: UIViewController? = nil, bundle: Bundle? = nil) {
+    required init(rootViewController: UIViewController? = nil, bundle: Bundle? = nil, configuration: NSDictionary? = nil) {
         presentingViewController = rootViewController
         self.bundle = bundle ?? Bundle.main
+        configurationJSON = configuration
     }
     
     func present(with type: PopupType?) {
@@ -95,7 +98,10 @@ class NotificationsPopupRouter: PopupRouter {
         let type = type ?? initialPopupType
         switch type {
         case .privacy:
-            let popupViewController = storyboard.instantiateViewController(withIdentifier: type.rawValue)
+            guard let popupViewController = storyboard.instantiateViewController(withIdentifier: type.rawValue) as? PrivacyViewController else { break }
+            if let privacyUrl = configurationJSON?[ConfigurationKey.privacyUrl.rawValue] as? String {
+                popupViewController.privacyUrl = privacyUrl
+            }
             presentingViewController?.present(popupViewController, animated: true, completion: nil)
         default:
             break

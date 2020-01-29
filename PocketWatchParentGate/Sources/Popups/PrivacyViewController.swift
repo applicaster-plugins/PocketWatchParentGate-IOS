@@ -16,7 +16,7 @@ class PrivacyViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    private let privacyUrl = "https://pocket.watch/app/terms-of-service"
+    var privacyUrl = "https://pocket.watch/app/privacy"
     
     override func viewDidLoad() {
         super.viewDidLoad()

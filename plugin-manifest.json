@@ -29,8 +29,8 @@
   "custom_configuration_fields": [
       {
         "type": "text",
-        "key": "urbanairship_master_key",
-        "tooltip_text": "Urbanairship application master key",
+        "key": "privacy_url_key",
+        "tooltip_text": "Privacy url key",
         "default": ""
       }
   ]
