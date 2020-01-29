@@ -17,7 +17,7 @@ struct PopupRouterConstants {
     static let notificationsActionTitle = "OK"
 }
 
-protocol PopupRouter {
+protocol PopupRouter: Configurable {
     
     var completion: (() -> Void)? { get set }
     
@@ -25,7 +25,7 @@ protocol PopupRouter {
     
     var initialPopupType: PopupType { get set }
     
-    init(rootViewController: UIViewController?, bundle: Bundle?)
+    init(rootViewController: UIViewController?, bundle: Bundle?, configuration: NSDictionary?)
     
     func present(with type: PopupType?)
     

@@ -12,20 +12,21 @@ class ControlNotificationsViewController: UIViewController {
     @IBOutlet weak var notificationsSwitch: UISwitch!
         
     @IBAction func switchAction(_ sender: UISwitch) {
-        popupRouter.notificationsEnabled = sender.isOn
+        popupRouter?.notificationsEnabled = sender.isOn
+        guard let popupRouter = popupRouter else { return }
         let parentGateViewController = ParentGateViewController(router: popupRouter)
         parentGateViewController.modalPresentationStyle = .fullScreen
         parentGateViewController.completion = { [weak parentGateViewController] in
-            self.notificationsSwitch.setOn(self.popupRouter.notificationsEnabled, animated: true)
+            self.notificationsSwitch.setOn(popupRouter.notificationsEnabled, animated: true)
             parentGateViewController?.dismiss(animated: true, completion: nil)
         }
         present(parentGateViewController, animated: true, completion: nil)
     }
+        
+    var popupRouter: NotificationsPopupRouter?
     
     var completion: (() -> Void)?
-    
-    private var popupRouter = NotificationsPopupRouter(bundle: PocketWatchParentGate.bundle)
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         

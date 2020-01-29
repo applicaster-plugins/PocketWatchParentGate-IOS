@@ -16,7 +16,7 @@ class PrivacyViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    private let privacyUrl = "https://pocket.watch/app/terms-of-service"
+    var privacyUrl = "https://pocket.watch/app/privacy"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,25 +48,13 @@ extension PrivacyViewController {
             views: views
         )
         allConstraints += webViewHorizontalConstraints
-                
-        if #available(iOS 13, *) {
-            closeButton.isHidden = true
-            
-            let webViewVerticalConstraints = NSLayoutConstraint.constraints(
-                withVisualFormat: "V:|-8-[webView]-8-|",
-                metrics: nil,
-                views: views
-            )
-            allConstraints += webViewVerticalConstraints
-
-        } else {
-            let webViewVerticalConstraints = NSLayoutConstraint.constraints(
-                withVisualFormat: "V:[closeButton]-8-[webView]-8-|",
-                metrics: nil,
-                views: views
-            )
-            allConstraints += webViewVerticalConstraints
-        }
+                        
+        let webViewVerticalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:[closeButton]-8-[webView]-8-|",
+            metrics: nil,
+            views: views
+        )
+        allConstraints += webViewVerticalConstraints
         
         NSLayoutConstraint.activate(allConstraints)
     }

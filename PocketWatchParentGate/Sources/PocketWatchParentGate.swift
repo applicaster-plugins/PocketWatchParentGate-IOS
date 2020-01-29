@@ -65,7 +65,7 @@ import ZappPlugins
      */
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
         
-        let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Self.bundle))
+        let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Self.bundle, configuration: configurationJSON))
         parentGateViewController.modalPresentationStyle = .fullScreen
 
         UNUserNotificationCenter.current().getNotificationSettings { settings in
@@ -125,10 +125,15 @@ import ZappPlugins
     
     public required init?(pluginModel: ZPPluginModel, screenModel: ZLScreenModel, dataSourceModel: NSObject?) {
         super.init()
+        
+        configurationJSON = pluginModel.configurationJSON
     }
     
     public func createScreen() -> UIViewController {
         let storyboard = UIStoryboard(name: "ControlNotificationsStoryboard", bundle: Self.bundle)
-        return storyboard.instantiateInitialViewController() ?? UIViewController()
+        let screen = storyboard.instantiateInitialViewController() as? ControlNotificationsViewController
+        let router = NotificationsPopupRouter(bundle: PocketWatchParentGate.bundle, configuration: configurationJSON)
+        screen?.popupRouter = router
+        return screen ?? UIViewController()
     }
 }
