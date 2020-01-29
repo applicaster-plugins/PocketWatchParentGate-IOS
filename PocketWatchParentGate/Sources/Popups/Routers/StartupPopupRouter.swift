@@ -61,7 +61,6 @@ class StartupPopupRouter: PopupRouter {
                 self.presentAlert(title: nil, message: PopupRouterConstants.disableNotificationsTitle, actionTitle: PopupRouterConstants.notificationsActionTitle) { _ in
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
                 }
-                self.previousPopupType = type
             }
             popup.enableCompletion = { [weak popup] in
                 popup?.removeChild(animated: true)
