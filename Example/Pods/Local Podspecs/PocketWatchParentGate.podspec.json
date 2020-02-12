@@ -1,6 +1,6 @@
 {
   "name": "PocketWatchParentGate",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "summary": "A PocketWatchParentGate plugin that integrates to Applicaster Zapp based applications",
   "description": "A PocketWatchParentGate plugin that integrates to Applicaster Zapp based applications",
   "homepage": "https://github.com/applicaster-plugins/PocketWatchParentGate-IOS",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "git@github.com:applicaster-plugins/PocketWatchParentGate-IOS.git",
-    "tag": "0.1.3"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "10.0"
