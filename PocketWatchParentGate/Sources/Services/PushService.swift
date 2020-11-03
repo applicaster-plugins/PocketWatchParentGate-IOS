@@ -7,6 +7,8 @@
 
 import Foundation
 import FirebaseInstanceID
+import FirebaseMessaging
+import FirebaseCore
 
 protocol PushService {
     
@@ -19,16 +21,18 @@ class FirebasePushService: PushService {
     
     func subscribePush(withCompletion: ((Bool) -> Void)?) {
         var completion = withCompletion
-        InstanceID.instanceID().instanceID { (result, error) in
-            if let error = error {
-                completion?(false)
-                print("Error fetching instance ID: \(error.localizedDescription)")
-            } else {
-                completion?(true)
-            }
+        Messaging.messaging().token { token, error in
+          if let error = error {
+            print("Error fetching FCM registration token: \(error)")
+            completion?(false)
+          } else {
+            completion?(true)
+
+          }
         }
-        //Timeout. Temporary solution before update to the new API
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    
+        //Timeout.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             completion?(true)
             completion = nil
         }
@@ -36,7 +40,7 @@ class FirebasePushService: PushService {
     
     func unsubscribePush(withCompletion: ((Bool) -> Void)?) {
         var completion = withCompletion
-        InstanceID.instanceID().deleteID { error in
+        Messaging.messaging().deleteData { error in
             if let error = error {
                 completion?(false)
                 print("Error deleting instance ID: \(error.localizedDescription)")
@@ -44,8 +48,9 @@ class FirebasePushService: PushService {
                 completion?(true)
             }
         }
-        //Timeout. Temporary solution before update to the new API
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        
+        //Timeout.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             completion?(true)
             completion = nil
         }

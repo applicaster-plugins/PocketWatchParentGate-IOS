@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
     }
 
   s.dependency 'ZappPlugins'
-  s.dependency 'FirebaseInstanceID'
+  s.dependency 'Firebase/Messaging'
+  s.dependency 'Firebase/Core'
 
 end
