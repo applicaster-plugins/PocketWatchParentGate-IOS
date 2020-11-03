@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.pocketWatchParentGate?.executeOnApplicationReady(displayViewController: self, completion: { [weak self] in
+                print("completion callback")
                 self?.pocketWatchParentGate = nil
             })
         }

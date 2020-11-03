@@ -74,7 +74,9 @@ extension ParentGateViewController {
         popupRouter?.presentingViewController = self
         popupRouter?.present(with: nil)
         popupRouter?.completion = { [weak self] in
-            self?.dismiss(animated: true, completion: self?.completion)
+//            self?.dismiss(animated: true, completion: {
+                self?.completion?()
+//            })
         }
     }
 }

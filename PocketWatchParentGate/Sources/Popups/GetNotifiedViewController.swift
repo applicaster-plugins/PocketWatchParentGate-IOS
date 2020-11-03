@@ -25,7 +25,11 @@ class GetNotifiedViewController: UIViewController {
                     UIApplication.shared.registerForRemoteNotifications()
                 }
                 self.yesCompletion?(granted)
-                granted ? PocketWatchParentGate.pushService.subscribePush() : PocketWatchParentGate.pushService.unsubscribePush()
+                if (granted) {
+                    PocketWatchParentGate.subscribePush()
+                } else {
+                    PocketWatchParentGate.unsubscribePush()
+                }
             }
         }
     }

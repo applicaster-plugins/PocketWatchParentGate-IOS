@@ -17,22 +17,24 @@ import ZappPlugins
         return nil
     }()
     
-    public var configurationJSON: NSDictionary?
     
+    public var configurationJSON: NSDictionary?
     public var screenPluginDelegate: ZPPlugableScreenDelegate?
     
     static var pushService: PushService = FirebasePushService()
+    private static var toastDisplayController: UIViewController? = nil
     
     private let firsAppLaunchKey = "PocketWatchParentGate.firsAppLaunchKey"
-        
+    private var parentGateViewController: UIViewController? = nil
+    
     public required init(configurationJSON: NSDictionary?) {
         self.configurationJSON = configurationJSON
     }
-
+    
     public required override init() {
         
     }
-
+    
     // MARK: - ZPAdapterProtocol implementation
     /*
      This protocol should be implemented by plugin that need to add some logic before application load data and before rootViewController presented. example: login plugin will implement this inteface in order to make login flow before application data launched.
@@ -64,28 +66,38 @@ import ZappPlugins
      This method called after all the data loaded and before viewController presented.
      */
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
+        Self.toastDisplayController = displayViewController
+        let debugCompletion: (() -> Void) = {
+            #if DEBUG
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                completion?()
+                self.parentGateViewController?.dismiss(animated: false, completion: nil)
+                self.parentGateViewController?.dismiss(animated: false, completion: nil)
+            }
+            #else
+            completion?()
+            self.parentGateViewController?.dismiss(animated: false, completion: nil)
+            #endif
+        }
         
-        let parentGateViewController = ParentGateViewController(router: StartupPopupRouter(bundle: Self.bundle, configuration: configurationJSON))
-        parentGateViewController.modalPresentationStyle = .fullScreen
-
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             if settings.authorizationStatus == .notDetermined || !UserDefaults.standard.bool(forKey: self.firsAppLaunchKey) {
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         UNUserNotificationCenter.current().getNotificationSettings { settings in
                             DispatchQueue.main.async {
-                                settings.authorizationStatus == .authorized ? Self.pushService.subscribePush() : Self.pushService.unsubscribePush()
                                 if settings.authorizationStatus == .authorized {
-                                    displayViewController?.present(parentGateViewController, animated: true, completion: nil)
-                                    parentGateViewController.completion = {
-                                        UserDefaults.standard.set(true, forKey: self.firsAppLaunchKey)
-                                        //Release the hook
-                                        completion?()
-                                    }
+                                    self.showInitiallyAuthorizedFlow(displayViewController: displayViewController, completion: debugCompletion)
                                 } else {
                                     //Release the hook
-                                    completion?()
+                                    debugCompletion()
+                                    if(settings.authorizationStatus == .authorized) {
+                                        Self.subscribePush()
+                                    }  else {
+                                        Self.unsubscribePush()
+                                    }
                                 }
+                                
                             }
                         }
                     }
@@ -93,14 +105,55 @@ import ZappPlugins
             } else {
                 DispatchQueue.main.async {
                     //Release the hook
-                    settings.authorizationStatus == .authorized ? Self.pushService.subscribePush() : Self.pushService.unsubscribePush()
-
-                    completion?()
+                    settings.authorizationStatus == .authorized ? Self.subscribePush(withToast: true) : Self.unsubscribePush(withToast: true)
+                    debugCompletion()
                 }
             }
         }
     }
     
+    static func subscribePush(withToast: Bool = true) {
+        Self.pushService.subscribePush{ (result) in
+            self.showDebugMessage(withToast: withToast,
+                                  message: result ? "Firebase push subscribed successfully" : "Firebase push subscribe failed")
+        }
+    }
+    
+    static func unsubscribePush(withToast: Bool = true) {
+        Self.pushService.unsubscribePush{ (result) in
+            self.showDebugMessage(withToast: withToast,
+                                  message: result ? "Firebase push unsubscribed successfully" : "Firebase push unsubscribe failed")
+        }
+    }
+    
+    private static func showDebugMessage(withToast: Bool, message: String) {
+        #if DEBUG
+        print(message)
+        if (withToast) {
+            Self.toastDisplayController?.showToast(message: message, seconds: 5, completion: {})
+        }
+        #endif
+    }
+    
+    private func showInitiallyAuthorizedFlow(displayViewController: UIViewController?, completion: (() -> Void)?) {
+        let viewController = ParentGateViewController(router: StartupPopupRouter(bundle: Self.bundle, configuration: self.configurationJSON))
+        viewController.modalPresentationStyle = .fullScreen
+        displayViewController?.present(viewController, animated: true, completion: nil)
+        viewController.completion = {
+            UserDefaults.standard.set(true, forKey: self.firsAppLaunchKey)
+            //Release the hook
+            completion?()
+            UNUserNotificationCenter.current().getNotificationSettings { settings in
+                if(settings.authorizationStatus == .authorized) {
+                    Self.subscribePush()
+                }  else {
+                    Self.unsubscribePush()
+                }
+            }
+        }
+        self.parentGateViewController = viewController
+        Self.toastDisplayController = viewController
+    }
     /*
      This method called after viewController is presented.
      */

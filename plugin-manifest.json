@@ -17,8 +17,8 @@
   "screen": true,
   "ui_builder_support": true,
   "dependency_name": "PocketWatchParentGate",
-  "manifest_version": "0.1.5",
-  "dependency_version": "0.1.5",
+  "manifest_version": "0.1.6",
+  "dependency_version": "0.1.6",
   "whitelisted_account_ids": [
     "5d642ecd161adb0008ea8e50"
   ],
