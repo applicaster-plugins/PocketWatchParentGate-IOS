@@ -74,7 +74,7 @@ PODS:
     - nanopb/encode (= 2.30906.0)
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
-  - PocketWatchParentGate (0.1.6):
+  - PocketWatchParentGate (0.1.7):
     - Firebase/Core
     - Firebase/Messaging
     - ZappPlugins
@@ -120,7 +120,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 6ce8004a961db1b905740d7be106c61ba7e89c21
   GoogleUtilities: ffb2f4159f2c897c6e8992bd7fbcdef8a300589c
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
-  PocketWatchParentGate: e9e5391e13d5c097cd0979e22ffb1e6a00d216e2
+  PocketWatchParentGate: fc471d7e0bf4285403762bb2517fa9d8ecad82ab
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   ZappCore: cc45ec2514e5cf879593a58e60b1815a7abe0048
   ZappPlugins: c989f6ebf539f0071032d064e225349f420950e5

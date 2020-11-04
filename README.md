@@ -27,3 +27,10 @@ Andrii Novoselskyi, anovoselskyi@gmail.com
 ## License
 
 PocketWatchParentGate is available under the MIT license. See the LICENSE file for more info.
+
+## Publish
+Bump version in the manifest and publish manifest.
+Bump version in podspec file
+Merge you changes to the master.
+Create and publish tag named as new version.
+Add podspec with the version to the https://github.com/applicaster/CocoaPods-Private/tree/master/PocketWatchParentGate
