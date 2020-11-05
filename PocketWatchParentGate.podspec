@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PocketWatchParentGate'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'A PocketWatchParentGate plugin that integrates to Applicaster Zapp based applications'
   s.description      = 'A PocketWatchParentGate plugin that integrates to Applicaster Zapp based applications'
   s.homepage         = 'https://github.com/applicaster-plugins/PocketWatchParentGate-IOS'
@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
     }
 
   s.dependency 'ZappPlugins'
-  s.dependency 'Firebase/Messaging', '~> 7.0.0'
+  s.dependency 'Firebase/Messaging'
 
 end
