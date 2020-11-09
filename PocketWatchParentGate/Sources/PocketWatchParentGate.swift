@@ -68,16 +68,16 @@ import ZappPlugins
     @objc public func executeOnApplicationReady(displayViewController: UIViewController?, completion: (() -> Void)?) {
         Self.toastDisplayController = displayViewController
         let debugCompletion: (() -> Void) = {
-            #if DEBUG
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            if (ZAAppConnector.sharedInstance().genericDelegate?.isDebug() == true) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    completion?()
+                    self.parentGateViewController?.dismiss(animated: false, completion: nil)
+                    self.parentGateViewController?.dismiss(animated: false, completion: nil)
+                }
+            } else {
                 completion?()
                 self.parentGateViewController?.dismiss(animated: false, completion: nil)
-                self.parentGateViewController?.dismiss(animated: false, completion: nil)
             }
-            #else
-            completion?()
-            self.parentGateViewController?.dismiss(animated: false, completion: nil)
-            #endif
         }
         
         UNUserNotificationCenter.current().getNotificationSettings { settings in
@@ -127,12 +127,12 @@ import ZappPlugins
     }
     
     private static func showDebugMessage(withToast: Bool, message: String) {
-        #if DEBUG
-        print(message)
-        if (withToast) {
-            Self.toastDisplayController?.showToast(message: message, seconds: 5, completion: {})
+        if (ZAAppConnector.sharedInstance().genericDelegate?.isDebug() == true) {
+            print(message)
+            if (withToast) {
+                Self.toastDisplayController?.showToast(message: message, seconds: 5, completion: {})
+            }
         }
-        #endif
     }
     
     private func showInitiallyAuthorizedFlow(displayViewController: UIViewController?, completion: (() -> Void)?) {

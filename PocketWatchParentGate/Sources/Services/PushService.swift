@@ -7,7 +7,7 @@
 
 import Foundation
 import FirebaseInstanceID
-import FirebaseMessaging
+//import FirebaseMessaging
 import FirebaseCore
 
 protocol PushService {
